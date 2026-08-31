@@ -927,3 +927,53 @@ h2.proof-heading {
     line-height: 27px;
   }
 }
+
+/* Compact mobile hero while keeping the desktop design unchanged. */
+@media (max-width: 600px) {
+  .section {
+    padding-inline: 20px;
+  }
+  .hero {
+    padding-top: 24px;
+  }
+  .hero-main {
+    gap: 14px;
+  }
+  .hero-main > .s3 {
+    flex: none;
+    height: 24px;
+  }
+  .hero-main > .s3 img {
+    height: 24px;
+    width: 80px;
+  }
+  .hero-copy {
+    gap: 12px;
+  }
+  .hero-without {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .hero .audience {
+    padding: 8px 14px;
+  }
+  .hero .audience > p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 600px) {
+  /* Crop only the SVG's empty vertical margins; keep the logo artwork proportional. */
+  .hero-main > .s3 img {
+    width: 112px;
+    object-fit: cover;
+    object-position: center;
+  }
+  /* Keep the primary action visible before the longer supporting paragraph. */
+  .hero-copy > .cta {
+    order: 1;
+  }
+  .hero-copy > .s13 {
+    order: 2;
+  }
+}

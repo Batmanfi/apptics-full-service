@@ -8,9 +8,9 @@ All H1 and H2 headings are 48px/58px on desktop and 28px/36px on mobile. Heading
 
 | Element | Desktop size / line height | Mobile size / line height | Weight (desktop / mobile) |
 |---|---|---|---|
-| Audience badge | 18px / 22px | 14px / 21px | 600 / 600 |
+| Audience badge | 18px / 22px | 13px / 18px | 600 / 600 |
 | Main heading | 48px / 58px | 28px / 36px | 600 / 600 |
-| WITHOUT subheading | 29px / 42px | 21px / 31px | 600 / 600 |
+| WITHOUT subheading | 29px / 42px | 16px / 23px | 600 / 600 |
 | Hero body | 18px / 29px | 17px / 27px | 400 / 400 |
 | Audit button | 21px / 28px | 17px / 24px | 600 / 600 |
 | Metric values | 42px / 48px | 34px / 42px | 600 / 600 |
