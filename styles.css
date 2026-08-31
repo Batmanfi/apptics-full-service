@@ -67,13 +67,7 @@ video:focus-visible {
   overflow: clip;
 }
 .section {
-  padding-inline: max(32px, calc((100% - 1184px) / 2));
-}
-.hero {
-  padding-inline: max(32px, calc((100% - 1280px) / 2));
-}
-.testimonials {
-  padding-inline: max(32px, calc((100% - 1312px) / 2));
+  padding-inline: max(32px, calc((100% - 1200px) / 2));
 }
 .copy-break {
   display: block;
@@ -106,7 +100,7 @@ video:focus-visible {
   height: 24px;
 }
 .metrics {
-  max-width: 1280px;
+  max-width: 1200px;
 }
 .metrics > * {
   flex: 1;
@@ -133,7 +127,7 @@ video:focus-visible {
   width: 100%;
 }
 .system-step {
-  max-width: 1080px;
+  max-width: 1200px;
 }
 .system-step > div:last-child > div:first-child h3 {
   line-height: 28px;
@@ -162,7 +156,7 @@ video:focus-visible {
   flex-shrink: 1;
 }
 .guarantee-card {
-  max-width: 1080px;
+  max-width: 1200px;
 }
 .featured-story {
   height: auto;
@@ -234,10 +228,11 @@ video:focus-visible {
   display: none;
 }
 .faq-question > svg {
+  transform: rotate(180deg);
   transition: transform 0.2s;
 }
 .faq-item[open] .faq-question > svg {
-  transform: rotate(180deg);
+  transform: rotate(0);
 }
 .faq-answer {
   margin-top: 18px;
@@ -799,4 +794,33 @@ h2.rich {
     font-size: 17px;
     line-height: 27px;
   }
+}
+
+/* Common section container. Text can retain a narrower reading measure. */
+.hero-copy,
+.featured-story,
+.testimonial-grid,
+.operators > div,
+.fit-grid,
+.faq-list {
+  max-width: 1200px;
+}
+.fit-list {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-size: 16px;
+  line-height: 26px;
+  list-style-type: disc;
+}
+.fit-list li {
+  padding-left: 4px;
+}
+.fit-card:first-child .fit-list {
+  color: var(--color-background);
+}
+.fit-card:last-child .fit-list {
+  color: var(--color-text);
 }

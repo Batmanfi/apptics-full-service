@@ -10,15 +10,19 @@ python3 -m http.server 4173
 
 Open http://localhost:4173.
 
+All section containers use a common 1200px desktop maximum, while individual introductory paragraphs can keep a narrower reading measure. The fit cards use semantic bullet lists with 18px between items.
+
+See [TYPOGRAPHY.md](TYPOGRAPHY.md) for every desktop and mobile heading, body, label, and button size, including line heights.
+
 ## Files
 
-- `index.html`: page content, accessible links, native FAQ disclosures, and testimonial player.
+- `index.html`: page content, accessible links, native FAQ disclosures (closed by default), and testimonial player.
 - `design.css`: typography, colors, gradients, and desktop styling exported from Paper.
 - `styles.css`: responsive layout rules and interactive states.
 - `script.js`: progressive enhancement for the testimonial player.
 - `assets/`: Apptics logos, icons, photos, bundled video, and self-hosted Geist fonts.
 
-The services section uses two equal columns on desktop/tablet and one column at 600px and below. Layouts have been checked at 320, 375, 390, 600, 768, 1024, 1440, and 1920px. Copy was compared with all 12 sections of the source design.
+The services section uses two equal columns on desktop/tablet and one column at 600px and below. Layouts have been checked at 320, 375, 390, 600, 768, 1024, 1440, and 1920px. The original copy was compared with all 12 sections of the source design; the fit-card copy was subsequently replaced with the supplied shorter bullet lists.
 
 Audit buttons point to the existing Apptics demo page. Footer links use existing Apptics destinations. FAQs work without JavaScript, and video falls back to native controls.
 
