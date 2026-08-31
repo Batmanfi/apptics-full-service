@@ -969,11 +969,8 @@ h2.proof-heading {
     object-fit: cover;
     object-position: center;
   }
-  /* Keep the primary action visible before the longer supporting paragraph. */
-  .hero-copy > .cta {
-    order: 1;
-  }
   .hero-copy > .s13 {
-    order: 2;
+    font-size: 16px;
+    line-height: 24px;
   }
 }

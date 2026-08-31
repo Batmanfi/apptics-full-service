@@ -14,7 +14,7 @@ All section containers use a common 1200px desktop maximum, while individual int
 
 See [TYPOGRAPHY.md](TYPOGRAPHY.md) for every desktop and mobile heading, body, label, and button size, including line heights.
 
-On phones (600px and below), the hero uses 20px side padding, 24px top padding, a 24px-high logo box, and 12px between copy blocks. The audit button appears after the WITHOUT line and before the longer supporting paragraph so it remains visible in compact phone viewports. Desktop order is unchanged.
+On phones (600px and below), the hero uses 20px side padding, 24px top padding, a 24px-high logo box, and 12px between copy blocks. The audit button stays below the hero body on both desktop and mobile. The mobile hero body uses 16px text with 24px line height.
 
 ## Files
 
