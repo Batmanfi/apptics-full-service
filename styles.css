@@ -824,3 +824,106 @@ h2.rich {
 .fit-card:last-child .fit-list {
   color: var(--color-text);
 }
+
+/* Final type scale: section headings share a consistent size. */
+.page h1,
+.page h2 {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 600;
+}
+.page :is(h1, h2, h3),
+.page :is(h1, h2, h3) *,
+.hero-without,
+.hero-without * {
+  border-bottom: 0;
+  text-decoration: none;
+}
+h2.proof-heading {
+  display: block;
+  text-align: center;
+}
+.proof-heading .s85 {
+  display: inline;
+  font-size: inherit;
+  line-height: inherit;
+}
+.proof-heading .s86 {
+  display: inline-flex;
+  width: 54px;
+  height: 54px;
+  margin-inline: 12px;
+  vertical-align: middle;
+}
+.revenue-intro {
+  width: 100%;
+  max-width: 1000px;
+  color: var(--color-text);
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+}
+.revenue-intro p {
+  display: block;
+  white-space: normal;
+}
+.revenue-intro p + p {
+  margin-top: 18px;
+}
+/* Older Apptics-style bullets: small dark dots, hanging text, comfortable spacing. */
+.bullet-list {
+  display: block;
+  margin: 0;
+  padding-left: 24px;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--color-text-muted);
+  list-style: disc outside;
+}
+.bullet-list li {
+  padding-left: 2px;
+}
+.bullet-list li + li {
+  margin-top: 14px;
+}
+.bullet-list li::marker {
+  color: var(--color-text);
+  font-size: 0.85em;
+}
+.fit-card:first-child .bullet-list,
+.fit-card:first-child .bullet-list li::marker {
+  color: var(--color-background);
+}
+.fit-card:last-child .bullet-list {
+  color: var(--color-text-muted);
+}
+.service-card {
+  min-height: 420px;
+  gap: 48px;
+}
+@media (max-width: 800px) {
+  .bullet-list {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .service-card {
+    min-height: 0;
+    gap: 36px;
+  }
+}
+@media (max-width: 600px) {
+  .page h1,
+  .page h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .proof-heading .s86 {
+    width: 36px;
+    height: 36px;
+    margin-inline: 7px;
+  }
+  .revenue-intro {
+    font-size: 17px;
+    line-height: 27px;
+  }
+}

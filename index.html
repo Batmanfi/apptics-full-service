@@ -17,7 +17,7 @@
       type="font/woff2"
       crossorigin
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20260831-final" />
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -133,17 +133,18 @@
             <span class="emphasis s25">Keeping the revenue</span> is the harder
             part.
           </h2>
-          <p class="s27" data-design="0-1-0-1">
-            An order comes in. Your ad account records a conversion. From the
-            acquisition side, the job looks finished.<br
-              class="s17"
-              data-design="0-1-0-1-1"
-            /><br class="s17" data-design="0-1-0-1-2" />But you still need that
-            customer to buy the right offer, complete payment, return or
-            subscribe, and stay out of the dispute queue. A weakness at any of
-            those points can make a good-looking acquisition less valuable than
-            it first appeared.
-          </p>
+          <div class="revenue-intro" data-design="0-1-0-1">
+            <p>
+              An order comes in. Your ad account records a conversion. From the
+              acquisition side, the job looks finished.
+            </p>
+            <p>
+              But you still need that customer to buy the right offer, complete
+              payment, return or subscribe, and stay out of the dispute queue. A
+              weakness at any of those points can make a good-looking
+              acquisition less valuable than it first appeared.
+            </p>
+          </div>
         </div>
         <div class="problem-grid s28" data-design="0-1-1">
           <article class="problem-card s29" data-design="0-1-1-0">
@@ -170,16 +171,22 @@
               <h3 class="s33" data-design="0-1-1-0-1-0">
                 Every month, you’re paying to replace one-time buyers
               </h3>
-              <p class="rich s35" data-design="0-1-1-0-1-1">
-                • Customers buy products they'd happily buy again -
-                <span class="emphasis s34"
-                  >checkout still ends the relationship at one order</span
-                >
-                <span class="copy-break"></span> • The next sale depends on them
-                remembering you, not on your system bringing them back
-                <span class="copy-break"></span> • An upsell doesn't fix whether
-                the subscription converts or the next payment even goes through
-              </p>
+              <ul class="bullet-list leak-list" data-design="0-1-1-0-1-1">
+                <li>
+                  Customers buy products they'd happily buy again -
+                  <span class="emphasis s34"
+                    >checkout still ends the relationship at one order</span
+                  >
+                </li>
+                <li>
+                  The next sale depends on them remembering you, not on your
+                  system bringing them back
+                </li>
+                <li>
+                  An upsell doesn't fix whether the subscription converts or the
+                  next payment even goes through
+                </li>
+              </ul>
             </div>
           </article>
           <article class="problem-card s29" data-design="0-1-1-1">
@@ -206,15 +213,21 @@
               <h3 class="s33" data-design="0-1-1-1-1-0">
                 Recurring revenue depends on a processor staying available
               </h3>
-              <p class="rich s35" data-design="0-1-1-1-1-1">
-                • A subscriber in a dashboard is not the same as a rebill that
-                actually goes through. <span class="copy-break"></span> • If
-                their payment details sit with one processor, a restriction or
-                shutdown can
-                <span class="emphasis s34">freeze that revenue.</span>
-                <span class="copy-break"></span> • The subscriptions may still
-                exist. The path to collect them may not.
-              </p>
+              <ul class="bullet-list leak-list" data-design="0-1-1-1-1-1">
+                <li>
+                  A subscriber in a dashboard is not the same as a rebill that
+                  actually goes through.
+                </li>
+                <li>
+                  If their payment details sit with one processor, a restriction
+                  or shutdown can
+                  <span class="emphasis s34">freeze that revenue.</span>
+                </li>
+                <li>
+                  The subscriptions may still exist. The path to collect them
+                  may not.
+                </li>
+              </ul>
             </div>
           </article>
           <article class="problem-card s29" data-design="0-1-1-2">
@@ -241,16 +254,23 @@
               <h3 class="s33" data-design="0-1-1-2-1-0">
                 You have to connect checkout, payments, and disputes
               </h3>
-              <p class="rich s35" data-design="0-1-1-2-1-1">
-                • Checkout, subscriptions, payments, and chargebacks live in
-                different tools. <span class="copy-break"></span> • When
-                collections drop or disputes rise, your team has to figure out
-                which vendor owns the problem.
-                <span class="copy-break"></span> • You see pieces of the money.
-                <span class="emphasis s34"
-                  >You don’t see the full path from “buy” to kept revenue.</span
-                >
-              </p>
+              <ul class="bullet-list leak-list" data-design="0-1-1-2-1-1">
+                <li>
+                  Checkout, subscriptions, payments, and chargebacks live in
+                  different tools.
+                </li>
+                <li>
+                  When collections drop or disputes rise, your team has to
+                  figure out which vendor owns the problem.
+                </li>
+                <li>
+                  You see pieces of the money.
+                  <span class="emphasis s34"
+                    >You don’t see the full path from “buy” to kept
+                    revenue.</span
+                  >
+                </li>
+              </ul>
             </div>
           </article>
         </div>
@@ -427,27 +447,20 @@
                 before recommending a change.
               </p>
             </div>
-            <div class="step-bullet s60" data-design="0-3-2-1-1">
-              <div class="s61" data-design="0-3-2-1-1-0"></div>
-              <p class="s62" data-design="0-3-2-1-1-1">
+            <ul class="bullet-list process-list">
+              <li>
                 Get a clear starting point for AOV, recurring revenue, failed
                 payments, and disputes
-              </p>
-            </div>
-            <div class="step-bullet s60" data-design="0-3-2-1-2">
-              <div class="s61" data-design="0-3-2-1-2-0"></div>
-              <p class="s62" data-design="0-3-2-1-2-1">
+              </li>
+              <li>
                 Separate a real leak from a feature that would only be nice to
                 have
-              </p>
-            </div>
-            <div class="step-bullet s60" data-design="0-3-2-1-3">
-              <div class="s61" data-design="0-3-2-1-3-0"></div>
-              <p class="s62" data-design="0-3-2-1-3-1">
+              </li>
+              <li>
                 Decide what stays, what changes, and which Apptics pieces
                 actually fit
-              </p>
-            </div>
+              </li>
+            </ul>
           </div>
         </article>
         <article class="system-step s52" data-design="0-3-3">
@@ -466,26 +479,19 @@
                 your current operation.
               </p>
             </div>
-            <div class="step-bullet s60" data-design="0-3-3-1-1">
-              <div class="s61" data-design="0-3-3-1-1-0"></div>
-              <p class="s62" data-design="0-3-3-1-1-1">
+            <ul class="bullet-list process-list">
+              <li>
                 Checkout, upsells, subscriptions, vaulting, payments, and Shield
                 are built as one system
-              </p>
-            </div>
-            <div class="step-bullet s60" data-design="0-3-3-1-2">
-              <div class="s61" data-design="0-3-3-1-2-0"></div>
-              <p class="s62" data-design="0-3-3-1-2-1">
+              </li>
+              <li>
                 You approve the business decisions; we handle the integrations
-              </p>
-            </div>
-            <div class="step-bullet s60" data-design="0-3-3-1-3">
-              <div class="s61" data-design="0-3-3-1-3-0"></div>
-              <p class="s62" data-design="0-3-3-1-3-1">
+              </li>
+              <li>
                 Payment routes and subscriber portability are checked against
                 your real setup — not assumed from a logo
-              </p>
-            </div>
+              </li>
+            </ul>
           </div>
         </article>
         <article class="system-step s52" data-design="0-3-4">
@@ -504,26 +510,19 @@
                 your customers.
               </p>
             </div>
-            <div class="step-bullet s60" data-design="0-3-4-1-1">
-              <div class="s61" data-design="0-3-4-1-1-0"></div>
-              <p class="s62" data-design="0-3-4-1-1-1">
+            <ul class="bullet-list process-list">
+              <li>
                 Biweekly calls to review AOV, recurring revenue, collections,
                 and disputes together
-              </p>
-            </div>
-            <div class="step-bullet s60" data-design="0-3-4-1-2">
-              <div class="s61" data-design="0-3-4-1-2-0"></div>
-              <p class="s62" data-design="0-3-4-1-2-1">
+              </li>
+              <li>
                 A dedicated service manager, with a 12-hour response target
-              </p>
-            </div>
-            <div class="step-bullet s60" data-design="0-3-4-1-3">
-              <div class="s61" data-design="0-3-4-1-3-0"></div>
-              <p class="s62" data-design="0-3-4-1-3-1">
+              </li>
+              <li>
                 Ongoing changes as the store grows, instead of treating setup as
                 a one-and-done project
-              </p>
-            </div>
+              </li>
+            </ul>
           </div>
         </article>
         <div class="s63" data-design="0-3-5">
@@ -557,10 +556,9 @@
           What you <span class="emphasis s25">actually get</span>
         </h2>
         <p class="s66" data-design="0-4-1">
-          Your full-service engagement combines the following workstreams. The
-          final scope identifies the modules, integrations, processing
-          requirements, and support included for your business, so you know what
-          the team is taking on and what remains with you.
+          This is the full-service build. Final scope still depends on your
+          store — which modules, integrations, and processing you need, and what
+          stays with your team.
         </p>
         <div class="services-grid s67" data-design="0-4-2">
           <article class="service-card s68" data-design="0-4-2-0-0">
@@ -587,16 +585,16 @@
               <h3 class="s71" data-design="0-4-2-0-0-1-0">
                 1. Checkout, subscription, payment, and chargeback audit
               </h3>
-              <p class="rich s72" data-design="0-4-2-0-0-1-1">
-                You get a review of the setup already handling your customer
-                revenue. We examine how the purchase flow, recurring billing,
-                payment providers, and dispute handling connect, rather than
-                assessing each in isolation. That review gives the
-                implementation a commercial purpose:
-                <span class="emphasis s34">fix an identifiable problem</span>
-                instead of replacing tools simply because another platform
-                exists.
-              </p>
+              <ul class="bullet-list service-list" data-design="0-4-2-0-0-1-1">
+                <li>
+                  We review how checkout, billing, processors, and disputes work
+                  together today
+                </li>
+                <li>
+                  The point is to find the leak worth fixing — not to swap tools
+                  for the sake of it
+                </li>
+              </ul>
             </div>
           </article>
           <article class="service-card s68" data-design="0-4-2-0-1">
@@ -623,17 +621,16 @@
               <h3 class="s71" data-design="0-4-2-0-1-1-0">
                 2. Custom Apptics Checkout and CRM access
               </h3>
-              <p class="rich s72" data-design="0-4-2-0-1-1-1">
-                Your checkout is configured around the purchasing experience you
-                want to offer, with
-                <span class="emphasis s34"
-                  >access to the Apptics checkout and CRM platform.</span
-                >
-                You have a place to manage the checkout and related customer
-                information within the wider system. The objective is a purchase
-                flow that supports the offer, rather than forcing your offer to
-                work around an unsuitable default flow.
-              </p>
+              <ul class="bullet-list service-list" data-design="0-4-2-0-1-1-1">
+                <li>
+                  Checkout is built around your offer, not a generic default
+                  flow
+                </li>
+                <li>
+                  You manage checkout and customer data inside Apptics,
+                  connected to the rest of the system
+                </li>
+              </ul>
             </div>
           </article>
           <article class="service-card s68" data-design="0-4-2-1-0">
@@ -660,17 +657,16 @@
               <h3 class="s71" data-design="0-4-2-1-0-1-0">
                 3. Upsell, bundle, and post-purchase offers
               </h3>
-              <p class="rich s72" data-design="0-4-2-1-0-1-1">
-                We build the agreed opportunities for customers to add relevant
-                value to their purchase. That can include product combinations,
-                upgrades, and post-purchase offers,
-                <span class="emphasis s34"
-                  >connected to the rest of the checkout.</span
-                >
-                You get more ways to increase order value, while the choice of
-                offer still needs to make sense for the customer and your
-                margins.
-              </p>
+              <ul class="bullet-list service-list" data-design="0-4-2-1-0-1-1">
+                <li>
+                  We add the agreed bundles, upgrades, and one-click
+                  post-purchase offers
+                </li>
+                <li>
+                  Every offer still has to make sense for the customer and your
+                  margins
+                </li>
+              </ul>
             </div>
           </article>
           <article class="service-card s68" data-design="0-4-2-1-1">
@@ -697,17 +693,13 @@
               <h3 class="s71" data-design="0-4-2-1-1-1-0">
                 4. Subscription-flow implementation
               </h3>
-              <p class="rich s72" data-design="0-4-2-1-1-1-1">
-                We implement the path that presents an appropriate recurring
-                purchase alongside your product offer. This is for products and
-                customers with a genuine reason to buy repeatedly, not a
-                requirement to turn every order into a subscription. The flow
-                gives willing repeat buyers
-                <span class="emphasis s34"
-                  >a clearer route into recurring revenue</span
-                >
-                instead of relying only on them returning manually.
-              </p>
+              <ul class="bullet-list service-list" data-design="0-4-2-1-1-1-1">
+                <li>
+                  We add a clear path into recurring revenue where a repeat-use
+                  case actually exists
+                </li>
+                <li>We do not turn every one-time order into a subscription</li>
+              </ul>
             </div>
           </article>
           <article class="service-card s68" data-design="0-4-2-2-0">
@@ -734,18 +726,16 @@
               <h3 class="s71" data-design="0-4-2-2-0-1-0">
                 5. Subscriber tokenization, vaulting, and rebilling
               </h3>
-              <p class="rich s72" data-design="0-4-2-2-0-1-1">
-                Eligible subscriber payment credentials are
-                <span class="emphasis s34"
-                  >tokenized and vaulted through Apptics</span
-                >
-                rather than treated as inseparable from one processor. That
-                supports greater flexibility when evaluating a move to another
-                supported processor. Portability still depends on the
-                credentials, merchant account, supported providers, and
-                applicable requirements; the benefit is having options to
-                assess, not a promise that every credential works everywhere.
-              </p>
+              <ul class="bullet-list service-list" data-design="0-4-2-2-0-1-1">
+                <li>
+                  Eligible subscriber credentials are vaulted on Apptics, not
+                  locked to one processor
+                </li>
+                <li>
+                  That gives you more options if a processor restricts or shuts
+                  you down — not a promise that every token moves everywhere
+                </li>
+              </ul>
             </div>
           </article>
           <article class="service-card s68" data-design="0-4-2-2-1">
@@ -772,17 +762,16 @@
               <h3 class="s71" data-design="0-4-2-2-1-1-0">
                 6. Apptics Pay processing setup
               </h3>
-              <p class="rich s72" data-design="0-4-2-2-1-1-1">
-                Your payment setup can include access to multiple supported
-                routes appropriate to the business. We help establish the agreed
-                processing configuration so you can
-                <span class="emphasis s34"
-                  >reduce dependence on one available path</span
-                >
-                for collecting revenue. A route must still be available and
-                approved for your business; adding routing technology does not
-                replace processor underwriting or guarantee an approval.
-              </p>
+              <ul class="bullet-list service-list" data-design="0-4-2-2-1-1-1">
+                <li>
+                  We set up supported payment routes so you are less dependent
+                  on one processor
+                </li>
+                <li>
+                  A route still has to be available and approved for your
+                  business. Routing is not a guarantee of approval
+                </li>
+              </ul>
             </div>
           </article>
           <article class="service-card s68" data-design="0-4-2-3-0">
@@ -807,18 +796,18 @@
             </div>
             <div class="s70" data-design="0-4-2-3-0-1">
               <h3 class="s71" data-design="0-4-2-3-0-1-0">
-                7. Smart Salvage AI access and failed-payment recovery
+                7. Smart Salvage AI and failed-payment recovery
               </h3>
-              <p class="rich s72" data-design="0-4-2-3-0-1-1">
-                Your engagement includes access to Smart Salvage AI alongside
-                the agreed rebilling and payment setup. Failed-payment recovery
-                is considered as part of
-                <span class="emphasis s34">protecting recurring revenue,</span>
-                rather than treating every unsuccessful collection as a lost
-                customer. The supported recovery options are confirmed for your
-                configuration, with no assumption that every decline is
-                recoverable.
-              </p>
+              <ul class="bullet-list service-list" data-design="0-4-2-3-0-1-1">
+                <li>
+                  Failed rebills are treated as recoverable revenue, not an
+                  automatic lost customer
+                </li>
+                <li>
+                  Recovery options are confirmed for your setup. Not every
+                  decline can be saved
+                </li>
+              </ul>
             </div>
           </article>
           <article class="service-card s68" data-design="0-4-2-3-1">
@@ -845,19 +834,17 @@
               <h3 class="s71" data-design="0-4-2-3-1-1-0">
                 8. Apptics Shield fraud and dispute support
               </h3>
-              <p class="rich s72" data-design="0-4-2-3-1-1-1">
-                Shield brings
-                <span class="emphasis s34"
-                  >fraud prevention, dispute alerts, and automated dispute
-                  support</span
-                >
-                into the same engagement. Alerts and resolution workflows can
-                address eligible disputes before they become formal chargebacks;
-                some resolutions involve refunding the transaction. You
-                therefore evaluate the benefit across chargeback exposure,
-                refund costs, and service fees—not by treating every prevented
-                chargeback as a sale retained in full.
-              </p>
+              <ul class="bullet-list service-list" data-design="0-4-2-3-1-1-1">
+                <li>
+                  Fraud screening, dispute alerts, and automated resolution sit
+                  in the same system
+                </li>
+                <li>
+                  Eligible disputes can be handled before they become
+                  chargebacks. Judge it by net cost, not by assuming every
+                  prevented chargeback is a full sale kept
+                </li>
+              </ul>
             </div>
           </article>
           <article class="service-card s68" data-design="0-4-2-4-0">
@@ -884,16 +871,16 @@
               <h3 class="s71" data-design="0-4-2-4-0-1-0">
                 9. White-glove onboarding and integrations
               </h3>
-              <p class="rich s72" data-design="0-4-2-4-0-1-1">
-                Our team
-                <span class="emphasis s34">handles the agreed setup work</span>
-                and connections with the tools your store already uses. Your
-                team supplies access, required information, and approvals, while
-                the integration work sits within one coordinated engagement.
-                Before you commit, the scope should identify the connections
-                involved, the dependencies, and who is responsible for each part
-                of the rollout.
-              </p>
+              <ul class="bullet-list service-list" data-design="0-4-2-4-0-1-1">
+                <li>
+                  Our team handles the agreed setup and connections to the tools
+                  you already use
+                </li>
+                <li>
+                  You provide access, product info, and approvals. Scope and
+                  owners are written down before rollout
+                </li>
+              </ul>
             </div>
           </article>
           <article class="service-card s68" data-design="0-4-2-4-1">
@@ -920,17 +907,16 @@
               <h3 class="s71" data-design="0-4-2-4-1-1-0">
                 10. Ongoing optimization and a dedicated service manager
               </h3>
-              <p class="rich s72" data-design="0-4-2-4-1-1-1">
-                You receive
-                <span class="emphasis s34"
-                  >biweekly support and optimization calls</span
-                >
-                plus a dedicated service manager with a 12-hour response target.
-                This gives you a continuing relationship after the initial
-                implementation, with time set aside to review performance and
-                discuss changes. A response target is not a promise that every
-                issue can be resolved within twelve hours.
-              </p>
+              <ul class="bullet-list service-list" data-design="0-4-2-4-1-1-1">
+                <li>
+                  Biweekly calls to review performance and decide what to change
+                  next
+                </li>
+                <li>
+                  A named service manager with a 12-hour response target — not a
+                  promise that every issue is finished in 12 hours
+                </li>
+              </ul>
             </div>
           </article>
         </div>
@@ -942,18 +928,11 @@
               The Apptics <span class="emphasis s76">90-Day MRR Guarantee</span>
             </h2>
             <p class="rich s79" data-design="0-5-0-0-1">
-              For eligible brands, we’ll
-              <span class="emphasis s78"
-                >double your store’s monthly recurring revenue within 90
-                days—or</span
-              >
-              return the platform fees covered by your agreement. Before you
-              start, the written terms must define your starting MRR,
-              measurement period, eligibility requirements, exclusions, and
-              refundable fees. This is a platform-fee guarantee, not
-              reimbursement for processing charges, implementation costs, or
-              other business losses unless your agreement explicitly includes
-              them.
+              For eligible brands, we’ll double your store’s monthly recurring
+              revenue within 90 days - or return the platform fees covered by
+              your agreement. Before you start, the written terms must define
+              your starting MRR, measurement period, eligibility requirements,
+              exclusions, and refundable fees.
             </p>
             <div class="s63" data-design="0-5-0-0-2">
               <a
@@ -992,9 +971,9 @@
         class="section testimonials s83"
         data-design="0-6"
       >
-        <div class="proof-heading s84" data-design="0-6-0">
-          <h3 class="s85" data-design="0-6-0-0">Why Businesses Love</h3>
-          <div class="s86" data-design="0-6-0-1">
+        <h2 class="proof-heading s84" data-design="0-6-0">
+          <span class="s85" data-design="0-6-0-0">Why Businesses Love</span>
+          <span class="s86" data-design="0-6-0-1">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -1012,9 +991,9 @@
                 data-design="0-6-0-1-0-0"
               ></path>
             </svg>
-          </div>
-          <h3 class="s85" data-design="0-6-0-2">Apptics</h3>
-        </div>
+          </span>
+          <span class="s85" data-design="0-6-0-2">Apptics</span>
+        </h2>
         <div class="featured-story s87" data-design="0-6-1">
           <div class="featured-copy s88" data-design="0-6-1-0">
             <div class="s89" data-design="0-6-1-0-0">
@@ -1328,7 +1307,7 @@
         <div class="fit-grid s117" data-design="0-8-2">
           <article class="fit-card s118" data-design="0-8-2-0">
             <h3 class="s119" data-design="0-8-2-0-0">Built for you if…</h3>
-            <ul class="fit-list" data-design="0-8-2-0-1">
+            <ul class="bullet-list fit-list" data-design="0-8-2-0-1">
               <li>
                 You’re doing at least $50k/month and already have customers
                 buying
@@ -1356,7 +1335,7 @@
           </article>
           <article class="fit-card s121" data-design="0-8-2-1">
             <h3 class="s122" data-design="0-8-2-1-0">Not the right fit if…</h3>
-            <ul class="fit-list" data-design="0-8-2-1-1">
+            <ul class="bullet-list fit-list" data-design="0-8-2-1-1">
               <li>You’re still testing whether the product sells</li>
               <li>You only need more traffic — this is not an ads service</li>
               <li>
@@ -1851,14 +1830,10 @@
         </h2>
         <p class="rich s132" data-design="0-10-1">
           Your checkout, subscriptions, payment routes, and chargeback
-          protection should support the same goal:
-          <span class="emphasis s34"
-            >more customer revenue successfully collected and retained.</span
-          >
-          Apptics brings the implementation and ongoing optimization into one
-          full-service engagement, with a 90-day MRR guarantee for eligible
-          brands. Request your Revenue Leak Audit to review the opportunity, the
-          scope, and the numbers before deciding what to change.
+          protection should support the same goal: more customer revenue
+          successfully collected and retained. Apptics brings the implementation
+          and ongoing optimization into one full-service engagement, with a
+          90-day MRR guarantee for eligible brands.
         </p>
         <div class="s63" data-design="0-10-2">
           <a
@@ -1884,10 +1859,6 @@
                 data-design="0-10-2-0-1-0"
               ></path></svg
           ></a>
-          <p class="s133" data-design="0-10-2-1">
-            Eligible brands: double MRR within 90 days or your platform fees
-            back, subject to the written guarantee terms.
-          </p>
         </div>
       </section>
       <footer id="footer" class="section footer s134" data-design="0-11">
