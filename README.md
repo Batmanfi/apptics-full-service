@@ -1,0 +1,31 @@
+# Apptics — Full-Service Revenue Retention
+
+A responsive, static landing page built from the finalized Apptics Paper design. Plain HTML, CSS, and JavaScript; no framework, dependencies, or build step are required to serve it.
+
+## Local preview
+
+```sh
+python3 -m http.server 4173
+```
+
+Open http://localhost:4173.
+
+## Files
+
+- `index.html`: page content, accessible links, native FAQ disclosures, and testimonial player.
+- `design.css`: typography, colors, gradients, and desktop styling exported from Paper.
+- `styles.css`: responsive layout rules and interactive states.
+- `script.js`: progressive enhancement for the testimonial player.
+- `assets/`: Apptics logos, icons, photos, bundled video, and self-hosted Geist fonts.
+
+The services section uses two equal columns on desktop/tablet and one column at 600px and below. Layouts have been checked at 320, 375, 390, 600, 768, 1024, 1440, and 1920px. Copy was compared with all 12 sections of the source design.
+
+Audit buttons point to the existing Apptics demo page. Footer links use existing Apptics destinations. FAQs work without JavaScript, and video falls back to native controls.
+
+## Deployment
+
+GitHub Pages serves the files directly from the root of `main`. Push changes to `main` to update the live site. `.nojekyll` disables Jekyll processing.
+
+## Design and assets
+
+Source: Apptics Paper file, “Apptics — Full-Service Landing Page,” as edited on August 31, 2026. Apptics copy and brand assets remain the property of their respective owners. Geist and Geist Mono are distributed under the SIL Open Font License; notices are included in `assets/`.
