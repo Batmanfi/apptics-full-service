@@ -21,4 +21,4 @@ for (const file of deployFiles) {
   });
 }
 
-console.log("Buzz-ready static site built in dist/");
+console.log("Production static site built in dist/");

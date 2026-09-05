@@ -17,7 +17,7 @@ npm ci
 npm run build
 ```
 
-The build recreates `dist/`, including the compiled form bundle and every static route required by Buzz.
+The build recreates `dist/`, including the compiled form bundle and every static route required by Vercel.
 
 ## Files
 
@@ -33,15 +33,14 @@ Audit CTAs open the in-page qualification form. They do not link to `apptics.ai/
 
 ## Deployment
 
-GitHub remains the source repository. Buzz serves the generated `dist/` directory:
+GitHub remains the source repository. Vercel builds and serves the generated `dist/` directory using `vercel.json`. Once the repository is connected to Vercel, pushes to `main` create production deployments automatically.
 
 ```sh
 npm ci
 npm run build
-buzz deploy ./dist --site YOUR_BUZZ_SITE
 ```
 
-Configure the Buzz CLI with the intended self-hosted Buzz server and authenticate before the first deploy. The `/dq/` and `/confirmation/` directory indexes work at either a root domain or a nested preview path.
+The `/dq/` and `/confirmation/` directory indexes work on the Vercel production domain and preview deployments.
 
 ## Design
 
