@@ -1,0 +1,14 @@
+{
+  "name": "apptics-full-service",
+  "private": true,
+  "scripts": {
+    "build:form": "esbuild src/form-entry.tsx --bundle --minify --format=iife --outfile=assets/apptics-form.bundle.js --jsx=transform --jsx-factory=React.createElement --jsx-fragment=React.Fragment"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.9"
+  }
+}
