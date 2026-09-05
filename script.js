@@ -40,13 +40,16 @@ function focusableIn(root) {
 
 function openForm(pushHistory) {
   if (!modal || modal.classList.contains("is-open")) return;
+  window.mountAppticsForm?.();
   modal.hidden = false;
   modal.classList.add("is-open");
   document.body.classList.add("form-open");
   if (page) page.inert = true;
   requestAnimationFrame(() => {
-    const first = focusableIn(modal)[0] || modal;
-    first.focus();
+    requestAnimationFrame(() => {
+      const first = focusableIn(modal)[0] || modal;
+      first.focus();
+    });
   });
   if (pushHistory !== false) {
     history.pushState({ [FORM_STATE]: true }, "", location.href);

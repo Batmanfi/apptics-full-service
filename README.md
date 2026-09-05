@@ -10,14 +10,14 @@ python3 -m http.server 4173
 
 Open http://localhost:4173.
 
-To rebuild the form bundle after editing `src/AppticsForm.tsx`:
+To install dependencies and create the production-ready static build:
 
 ```sh
-npm install
-npm run build:form
+npm ci
+npm run build
 ```
 
-The published GitHub Pages site is static. `assets/apptics-form.bundle.js` is committed so a direct-from-branch deploy works without a server build.
+The build recreates `dist/`, including the compiled form bundle and every static route required by Buzz.
 
 ## Files
 
@@ -26,14 +26,22 @@ The published GitHub Pages site is static. `assets/apptics-form.bundle.js` is co
 - `design.css` / `styles.css`: tokens, layout, and Framer breakpoints
 - `script.js`: testimonial player and form overlay (open/close, focus, history)
 - `src/AppticsForm.tsx`: canonical five-step form
-- `src/form-entry.tsx`: React mount adapter (`disqualifiedUrl="/dq/"`)
+- `src/form-entry.tsx`: lazy React mount adapter with deployment-relative routing
 - `assets/`: logos, icons, photos, video, Geist fonts, compiled form bundle
 
 Audit CTAs open the in-page qualification form. They do not link to `apptics.ai/demo`. FAQ 1 is open on load. Footer is the simplified Framer set (logo, social, Help, legal, Meta disclaimer).
 
 ## Deployment
 
-GitHub Pages serves files from the root of `main`. `.nojekyll` disables Jekyll processing. `/dq/` and `/confirmation/` are directory indexes.
+GitHub remains the source repository. Buzz serves the generated `dist/` directory:
+
+```sh
+npm ci
+npm run build
+buzz deploy ./dist --site YOUR_BUZZ_SITE
+```
+
+Configure the Buzz CLI with the intended self-hosted Buzz server and authenticate before the first deploy. The `/dq/` and `/confirmation/` directory indexes work at either a root domain or a nested preview path.
 
 ## Design
 

@@ -2,7 +2,7 @@ import * as React from "react";
 
 const APPTICS_API_URL = "https://apptics-application.kanishqfunnels.chatgpt.site";
 const CAL_BOOKING_URL = "https://cal.com/team/apptics/apptics-revenue-audit";
-const DISQUALIFIED_URL = "/dq/";
+const DISQUALIFIED_URL = "https://fun-product-779362.framer.app/dq";
 const FINAL_SAVE_GRACE_MS = 1200;
 
 const revenueOptions = [
