@@ -320,6 +320,9 @@ function createCalUrl(baseUrl: string, answers: Answers, attribution: Attributio
     name: answers.name,
     email: answers.email,
     website: answers.website,
+    revenue:
+      revenueOptions.find((option) => option.value === answers.revenue)?.label ??
+      answers.revenue,
     utm_source: attribution.utmSource,
     utm_medium: attribution.utmMedium,
     utm_campaign: attribution.utmCampaign,
