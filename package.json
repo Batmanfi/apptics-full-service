@@ -3,9 +3,11 @@
   "private": true,
   "scripts": {
     "build:form": "esbuild src/form-entry.tsx --bundle --minify --format=iife --outfile=assets/apptics-form.bundle.js --jsx=transform --jsx-factory=React.createElement --jsx-fragment=React.Fragment",
-    "build": "npm run build:form && node scripts/build-site.mjs"
+    "build:analytics": "esbuild src/analytics.ts --bundle --minify --format=iife --outfile=assets/analytics.bundle.js",
+    "build": "npm run build:form && npm run build:analytics && node scripts/build-site.mjs"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
