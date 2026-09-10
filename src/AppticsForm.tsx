@@ -18,6 +18,7 @@ type Answers = {
   email?: string;
   website?: string;
   revenue?: string;
+  hasUsUkCanadianEntity?: boolean;
 };
 
 type Attribution = {
@@ -54,6 +55,10 @@ const questions = [
     title: "What is your current monthly revenue?",
     description:
       "We need to know the revenue number so that we can send you tailored SOPs and assets for your current revenue stage prior to our call taking place.",
+  },
+  {
+    title: "Do you have a US LLC or UK LTD or Canadian corp",
+    description: "",
   },
 ] as const;
 
@@ -500,6 +505,7 @@ export default function AppticsForm({
       return false;
     if (step === 4 && !isValidWebsite(answers.website || "")) return false;
     if (step === 5 && !answers.revenue) return false;
+    if (step === 6 && typeof answers.hasUsUkCanadianEntity !== "boolean") return false;
     return true;
   }, [answers, step]);
 
@@ -536,7 +542,7 @@ export default function AppticsForm({
 
     inFlightRef.current = true;
     setError("");
-    const terminal = (step === 1 && answers.isEcommerce === false) || step === 5;
+    const terminal = (step === 1 && answers.isEcommerce === false) || step === 6;
 
     if (!terminal) {
       const nextStep = step + 1;
@@ -564,7 +570,12 @@ export default function AppticsForm({
   }, [answers, loading, queueSave, step, submit, track, validate]);
 
   const continueAfterChoice = React.useCallback(
-    async (selection: Pick<Answers, "isEcommerce"> | Pick<Answers, "revenue">) => {
+    async (
+      selection:
+        | Pick<Answers, "isEcommerce">
+        | Pick<Answers, "revenue">
+        | Pick<Answers, "hasUsUkCanadianEntity">,
+    ) => {
       if (inFlightRef.current || loading) return;
 
       const submission = { ...answers, ...selection };
@@ -573,7 +584,7 @@ export default function AppticsForm({
       setAnswers(submission);
       inFlightRef.current = true;
 
-      const terminal = (step === 1 && submission.isEcommerce === false) || step === 5;
+      const terminal = (step === 1 && submission.isEcommerce === false) || step === 6;
       if (!terminal) {
         const nextStep = step + 1;
         track("question_answered", String(step));
@@ -620,6 +631,9 @@ export default function AppticsForm({
         const index = ["a", "b", "c", "d"].indexOf(key);
         if (index >= 0) updateAnswer("revenue", revenueOptions[index].value);
       }
+      if (step === 6 && (key === "a" || key === "b")) {
+        updateAnswer("hasUsUkCanadianEntity", key === "a");
+      }
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
@@ -631,8 +645,8 @@ export default function AppticsForm({
     <>
       <style>{styles}</style>
       <main className="apptics-form">
-        <div className="apptics-progress" aria-label={`${step} of 5`}>
-          <span style={{ width: `${step * 20}%` }} />
+        <div className="apptics-progress" aria-label={`${step} of 6`}>
+          <span style={{ width: `${(step / 6) * 100}%` }} />
         </div>
 
         <section ref={stageRef} className="apptics-stage" key={step}>
@@ -733,6 +747,34 @@ export default function AppticsForm({
                   ))}
                 </fieldset>
               ) : null}
+
+              {step === 6 ? (
+                <fieldset className="apptics-choices">
+                  <legend style={{ position: "absolute", opacity: 0 }}>
+                    Do you have a US LLC or UK LTD or Canadian corp
+                  </legend>
+                  <Choice
+                    name="company-entity"
+                    shortcut="A"
+                    selected={answers.hasUsUkCanadianEntity === true}
+                    onChange={() => {
+                      void continueAfterChoice({ hasUsUkCanadianEntity: true });
+                    }}
+                  >
+                    Yes
+                  </Choice>
+                  <Choice
+                    name="company-entity"
+                    shortcut="B"
+                    selected={answers.hasUsUkCanadianEntity === false}
+                    onChange={() => {
+                      void continueAfterChoice({ hasUsUkCanadianEntity: false });
+                    }}
+                  >
+                    No
+                  </Choice>
+                </fieldset>
+              ) : null}
             </div>
 
             {error ? (
@@ -748,14 +790,14 @@ export default function AppticsForm({
                 disabled={loading}
                 onClick={() => void next()}
               >
-                {loading ? "..." : step === 5 ? "Submit" : "OK"}
+                {loading ? "..." : step === 6 ? "Submit" : "OK"}
               </button>
             </div>
           </div>
         </section>
 
         <footer className="apptics-footer">
-          <span>{step} of 5</span>
+          <span>{step} of 6</span>
           <button
             className="apptics-back"
             type="button"

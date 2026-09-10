@@ -25,7 +25,7 @@ The build recreates `dist/`, including the compiled form bundle and every static
 - `dq/index.html` and `confirmation/index.html`: auxiliary routes
 - `design.css` / `styles.css`: tokens, layout, and Framer breakpoints
 - `script.js`: testimonial player and form overlay (open/close, focus, history)
-- `src/AppticsForm.tsx`: canonical five-step form
+- `src/AppticsForm.tsx`: canonical six-step form
 - `src/form-entry.tsx`: lazy React mount adapter with deployment-relative routing
 - `assets/`: logos, icons, photos, video, Geist fonts, compiled form bundle
 
