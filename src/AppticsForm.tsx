@@ -328,6 +328,12 @@ function createCalUrl(baseUrl: string, answers: Answers, attribution: Attributio
     revenue:
       revenueOptions.find((option) => option.value === answers.revenue)?.label ??
       answers.revenue,
+    company_entity:
+      typeof answers.hasUsUkCanadianEntity === "boolean"
+        ? answers.hasUsUkCanadianEntity
+          ? "Yes"
+          : "No"
+        : undefined,
     utm_source: attribution.utmSource,
     utm_medium: attribution.utmMedium,
     utm_campaign: attribution.utmCampaign,
