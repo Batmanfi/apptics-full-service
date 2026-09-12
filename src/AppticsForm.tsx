@@ -316,7 +316,7 @@ function isValidWebsite(value: string) {
 }
 
 function isQualifiedApplicant(answers: Answers) {
-  return answers.isEcommerce === true;
+  return answers.isEcommerce === true && answers.hasUsUkCanadianEntity === true;
 }
 
 function createCalUrl(baseUrl: string, answers: Answers, attribution: Attribution) {
