@@ -46,10 +46,12 @@
   text-wrap: balance;
 }
 
-.payments-page .payments-hero h1 span {
+.payments-page .payments-hero h1 .payments-title-accent {
   display: block;
   color: var(--color-primary);
 }
+
+.payments-title-break { display: none; }
 
 .payments-hero__copy {
   max-width: 670px;
@@ -314,6 +316,8 @@
   .payments-eyebrow { margin-bottom: 18px; font-size: 12px; }
   .payments-page .payments-hero h1,
   .payments-page .payments-hero h1 span { font-size: 39px; line-height: 1.04; }
+  .payments-title-rest { display: block; }
+  .payments-title-break { display: initial; }
   .payments-hero__copy { margin-top: 22px; font-size: 16px; }
   .payments-actions { margin-top: 24px; }
   .payments-button { min-width: 180px; min-height: 46px; padding: 11px 18px; }
