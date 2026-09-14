@@ -23,7 +23,7 @@
   --shadow-cta: 0 30px 20px rgba(20, 102, 210, 0.16);
   --hero-gradient: radial-gradient(111.49% 88.02% at 50% 8.92%, #008dfa 0%, #42adfd 59.7892%, rgb(74, 175, 253) 70.02795%, #f6f8ff 100%);
   --hero-gradient-phone: radial-gradient(111.49% 88.02% at 50% 8.92%, #008dfa 0%, #42adfd 68%, #f6f8ff 100%);
-  --footer-gradient: radial-gradient(64.985% 155.18% at 50% 50%, #008dfa 0%, #4bb1ff 50%, #83caff 100%);
+  --footer-background: #0876cf;
   --color-success: #22bfae;
   --color-warning: #f5b942;
   --color-danger: #f05f7a;
@@ -1300,7 +1300,8 @@
 }
 .s134 {
   align-items: center;
-  background-image: var(--footer-gradient);
+  background-color: var(--footer-background);
+  background-image: none;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   display: flex;

@@ -295,6 +295,17 @@ input:focus-visible {
 }
 .footer {
   border-radius: 100px 100px 0 0;
+  color: #fff;
+  text-align: left;
+}
+.footer p,
+.footer a,
+.footer .s146,
+.footer .s153,
+.footer .s155,
+.footer .s158 {
+  color: #fff;
+  text-align: left;
 }
 .footer > .s135 {
   display: none;
@@ -852,9 +863,11 @@ h2.proof-heading {
     align-items: flex-start;
   }
   .legal-links {
+    align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     gap: 14px;
+    width: 100%;
   }
   .s157 {
     min-height: 116px;
