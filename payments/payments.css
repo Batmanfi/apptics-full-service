@@ -16,6 +16,8 @@
   text-align: center;
 }
 
+.payments-mobile-brand { display: none; }
+
 .payments-hero__inner {
   display: flex;
   flex-direction: column;
@@ -200,6 +202,8 @@
 .payments-table thead th:first-child,
 .payments-table tbody th { width: 48%; text-align: left; }
 .payments-table tbody th { color: #404652; font-weight: 500; }
+.payments-table tbody th .feature-icon { display: none; }
+.payments-table tbody th br { display: none; }
 .payments-table tbody tr:last-child > * { border-bottom: 0; }
 .payments-table__apptics { background: #eef8ff; }
 .payments-mini-logo {
@@ -295,13 +299,31 @@
 
 @media (max-width: 809.98px) {
   .payments-container { width: min(100% - 40px, 640px); }
-  .payments-hero { padding: 72px 0 12px; }
+  .payments-hero { padding: 22px 0 12px; }
+  .payments-mobile-brand {
+    display: flex;
+    width: calc(100% - 40px);
+    max-width: 640px;
+    align-items: center;
+    gap: 9px;
+    margin: 0 auto 70px;
+    color: #454957;
+  }
+  .payments-mobile-brand img { width: 40px; height: 40px; }
+  .payments-mobile-brand span { font-size: 32px; font-weight: 700; letter-spacing: -0.055em; line-height: 1; }
   .payments-eyebrow { margin-bottom: 18px; font-size: 12px; }
-  .payments-page .payments-hero h1 { font-size: clamp(40px, 12vw, 58px); line-height: 1.02; }
+  .payments-page .payments-hero h1,
+  .payments-page .payments-hero h1 span { font-size: 39px; line-height: 1.04; }
   .payments-hero__copy { margin-top: 22px; font-size: 16px; }
   .payments-actions { margin-top: 24px; }
-  .payments-button { min-height: 46px; padding: 11px 18px; }
-  .payments-hero__image { width: calc(100% + 16px); max-width: none; margin-top: 26px; }
+  .payments-button { min-width: 180px; min-height: 46px; padding: 11px 18px; }
+  .payments-hero__image {
+    width: min(100%, 330px);
+    height: auto;
+    aspect-ratio: 1440 / 800;
+    object-fit: contain;
+    margin-top: 58px;
+  }
   .payments-process { padding: 18px 0 72px; }
   .payments-process__grid { grid-template-columns: 1fr; gap: 48px; }
   .payments-step p { font-size: 14px; }
@@ -313,7 +335,53 @@
   .payments-page .payments-final-cta h2 { font-size: 38px; }
   .payments-section-heading > p { font-size: 15px; }
   .payments-table-wrap { margin-top: 42px; border-radius: 16px; }
-  .payments-table th, .payments-table td { height: 56px; padding: 10px 14px; font-size: 14px; }
+  .payments-table {
+    min-width: 0;
+    table-layout: fixed;
+  }
+  .payments-table thead th:first-child,
+  .payments-table tbody th { width: 52%; }
+  .payments-table thead th:not(:first-child),
+  .payments-table tbody td { width: 16%; }
+  .payments-table th,
+  .payments-table td { height: 76px; padding: 9px 4px; font-size: 13px; }
+  .payments-table thead th { height: 62px; font-size: 13px; }
+  .payments-table thead th:first-child { padding-left: 10px; }
+  .payments-table tbody th {
+    padding-left: 8px;
+    font-size: 14px;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  .payments-table tbody th > span:last-child {
+    display: inline-block;
+    width: calc(100% - 46px);
+    vertical-align: middle;
+    white-space: normal;
+  }
+  .payments-table tbody th br { display: initial; }
+  .payments-table tbody th .feature-icon {
+    display: inline-grid;
+    width: 34px;
+    height: 34px;
+    place-items: center;
+    margin-right: 8px;
+    border-radius: 10px;
+    color: #62b9fb;
+    background: #e8f8ff;
+    font-size: 17px;
+    font-weight: 700;
+    vertical-align: middle;
+  }
+  .payments-table thead .payments-table__apptics { font-size: 0; }
+  .payments-table thead .payments-mini-logo { margin-right: 0; font-size: 13px; }
+  .payments-table .yes,
+  .payments-table .no { width: 20px; height: 20px; font-size: 12px; }
+  .payments-table .payments-table__apptics .yes {
+    width: 28px;
+    height: 28px;
+    box-shadow: 0 6px 14px rgba(41, 160, 245, 0.42);
+  }
   .payments-proof { padding: 80px 0; }
   .payments-proof__card { grid-template-columns: 1fr; gap: 32px; padding: 22px; }
   .payments-proof blockquote { font-size: 21px; }
@@ -329,7 +397,5 @@
 }
 
 @media (max-width: 440px) {
-  .payments-actions { width: 100%; }
-  .payments-actions .payments-button { width: 100%; }
-  .payments-table-wrap { width: calc(100% + 20px); }
+  .payments-table-wrap { width: calc(100% + 24px); margin-left: -12px; }
 }
