@@ -273,7 +273,7 @@ input:focus-visible {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  width: auto;
+  width: 100%;
 }
 .footer-columns > div {
   width: auto;
@@ -296,6 +296,8 @@ input:focus-visible {
 .footer {
   border-radius: 100px 100px 0 0;
   color: #fff;
+  gap: 32px;
+  padding: 48px 32px 36px;
   text-align: left;
 }
 .footer p,
@@ -310,19 +312,33 @@ input:focus-visible {
 .footer > .s135 {
   display: none;
 }
+.footer > .s136 {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 180px;
+  gap: 64px;
+  max-width: 1200px;
+  width: 100%;
+}
 .footer-legal,
 .footer-brand {
   max-width: 1200px;
   width: 100%;
 }
+.footer-brand {
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+  max-width: none;
+}
 .legal-links {
   width: auto;
 }
 .s157 {
-  padding-top: 56px;
+  padding-top: 8px;
   padding-bottom: 0;
   height: auto;
-  min-height: 76px;
+  min-height: 0;
 }
 h1.rich,
 h2.rich {
@@ -849,6 +865,10 @@ h2.proof-heading {
     padding: 40px 20px 48px;
     gap: 28px;
   }
+  .footer > .s136 {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
   .footer-brand {
     align-items: flex-start;
     gap: 22px;
@@ -870,7 +890,8 @@ h2.proof-heading {
     width: 100%;
   }
   .s157 {
-    min-height: 116px;
+    min-height: 0;
+    padding-top: 20px;
   }
   .page-aux .hero-logo,
   .page-aux .hero-logo img {

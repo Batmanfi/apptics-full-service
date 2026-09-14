@@ -23,7 +23,7 @@
   --shadow-cta: 0 30px 20px rgba(20, 102, 210, 0.16);
   --hero-gradient: radial-gradient(111.49% 88.02% at 50% 8.92%, #008dfa 0%, #42adfd 59.7892%, rgb(74, 175, 253) 70.02795%, #f6f8ff 100%);
   --hero-gradient-phone: radial-gradient(111.49% 88.02% at 50% 8.92%, #008dfa 0%, #42adfd 68%, #f6f8ff 100%);
-  --footer-background: #0876cf;
+  --footer-background: #008dfa;
   --color-success: #22bfae;
   --color-warning: #f5b942;
   --color-danger: #f05f7a;
