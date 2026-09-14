@@ -10,6 +10,7 @@ const deployFiles = [
   "assets",
   "dq",
   "confirmation",
+  "payments",
 ];
 
 rmSync(outputDirectory, { recursive: true, force: true });
