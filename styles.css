@@ -121,6 +121,27 @@ input:focus-visible {
 .hero-title-muted {
   color: var(--text-inverse-muted);
 }
+.hero-vsl {
+  width: 100%;
+  max-width: 420px;
+  margin-inline: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #0b1a2b;
+}
+.hero-vsl wistia-player,
+wistia-player[media-id="g7x1vhmezd"] {
+  display: block;
+  width: 100%;
+}
+wistia-player[media-id="g7x1vhmezd"]:not(:defined) {
+  background: center / contain no-repeat
+    url("https://fast.wistia.com/embed/medias/g7x1vhmezd/swatch");
+  display: block;
+  width: 100%;
+  filter: blur(5px);
+  padding-top: 177.78%;
+}
 .cta {
   appearance: none;
   border: 0;
@@ -512,6 +533,9 @@ h2.proof-heading {
   .hero {
     padding-inline: 32px;
   }
+  .hero-vsl {
+    max-width: 380px;
+  }
   .testimonials {
     padding-inline: 40px;
   }
@@ -574,6 +598,10 @@ h2.proof-heading {
   }
   .hero-copy {
     gap: 20px;
+  }
+  .hero-vsl {
+    max-width: min(100%, 360px);
+    border-radius: 16px;
   }
   .audience {
     width: 100%;
