@@ -107,6 +107,8 @@ input:focus-visible {
 .services-grid,
 .problem-grid,
 .system-step,
+.partial-fix,
+.usual-fixes > .s45,
 .metrics {
   max-width: 1200px;
   width: 100%;
