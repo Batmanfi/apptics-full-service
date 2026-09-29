@@ -4,6 +4,25 @@ const APPTICS_API_URL = "https://apptics-application.kanishqfunnels.chatgpt.site
 const CAL_BOOKING_URL = "https://cal.com/team/apptics/apptics-revenue-audit";
 const DISQUALIFIED_URL = "https://fun-product-779362.framer.app/dq";
 const FINAL_SAVE_GRACE_MS = 1200;
+const TOTAL_STEPS = 7;
+
+const brandCategoryOptions = [
+  {
+    value: "research-peptides-laboratory-compounds",
+    label: "Research peptides and laboratory compounds",
+  },
+  {
+    value: "pharmacy-telehealth-supplements",
+    label: "Pharmacy, telehealth and supplements",
+  },
+  {
+    value: "apparel-sportswear-accessories",
+    label: "Apparel, sportswear and accessories",
+  },
+  { value: "other", label: "other" },
+] as const;
+
+const DISQUALIFIED_BRAND_CATEGORY = brandCategoryOptions[0].value;
 
 const revenueOptions = [
   { value: "under-25k", label: "$0 - $25,000/mo" },
@@ -14,6 +33,7 @@ const revenueOptions = [
 
 type Answers = {
   isEcommerce?: boolean;
+  brandCategory?: string;
   name?: string;
   email?: string;
   website?: string;
@@ -47,6 +67,10 @@ const questions = [
   {
     title: "Are you an e-commerce brand?",
     description: "this offer is ONLY for e-commerce businesses that sell products online.",
+  },
+  {
+    title: "What category best describes your brand/ecommerce store?",
+    description: "",
   },
   { title: "What is your name?*", description: "" },
   { title: "What is your email address?*", description: "" },
@@ -316,7 +340,11 @@ function isValidWebsite(value: string) {
 }
 
 function isQualifiedApplicant(answers: Answers) {
-  return answers.isEcommerce === true && answers.hasUsUkCanadianEntity === true;
+  return (
+    answers.isEcommerce === true &&
+    answers.brandCategory !== DISQUALIFIED_BRAND_CATEGORY &&
+    answers.hasUsUkCanadianEntity === true
+  );
 }
 
 function createCalUrl(baseUrl: string, answers: Answers, attribution: Attribution) {
@@ -506,12 +534,14 @@ export default function AppticsForm({
 
   const validate = React.useCallback(() => {
     if (step === 1 && typeof answers.isEcommerce !== "boolean") return false;
-    if (step === 2 && (!answers.name || answers.name.trim().length < 2)) return false;
-    if (step === 3 && (!answers.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(answers.email)))
+    if (step === 2 && !brandCategoryOptions.some((option) => option.value === answers.brandCategory))
       return false;
-    if (step === 4 && !isValidWebsite(answers.website || "")) return false;
-    if (step === 5 && !answers.revenue) return false;
-    if (step === 6 && typeof answers.hasUsUkCanadianEntity !== "boolean") return false;
+    if (step === 3 && (!answers.name || answers.name.trim().length < 2)) return false;
+    if (step === 4 && (!answers.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(answers.email)))
+      return false;
+    if (step === 5 && !isValidWebsite(answers.website || "")) return false;
+    if (step === 6 && !answers.revenue) return false;
+    if (step === 7 && typeof answers.hasUsUkCanadianEntity !== "boolean") return false;
     return true;
   }, [answers, step]);
 
@@ -548,15 +578,18 @@ export default function AppticsForm({
 
     inFlightRef.current = true;
     setError("");
-    const terminal = (step === 1 && answers.isEcommerce === false) || step === 6;
+    const terminal =
+      (step === 1 && answers.isEcommerce === false) ||
+      (step === 2 && answers.brandCategory === DISQUALIFIED_BRAND_CATEGORY) ||
+      step === TOTAL_STEPS;
 
     if (!terminal) {
       const nextStep = step + 1;
-      if (step === 3) setEmailLocked(true);
+      if (step === 4) setEmailLocked(true);
       track("question_answered", String(step));
       track("question_viewed", String(nextStep));
       setStep(nextStep);
-      if (step === 3) {
+      if (step === 4) {
         void queueSave(answers, nextStep, { partial: true }).catch(() =>
           setError("Please try again"),
         );
@@ -579,6 +612,7 @@ export default function AppticsForm({
     async (
       selection:
         | Pick<Answers, "isEcommerce">
+        | Pick<Answers, "brandCategory">
         | Pick<Answers, "revenue">
         | Pick<Answers, "hasUsUkCanadianEntity">,
     ) => {
@@ -590,7 +624,10 @@ export default function AppticsForm({
       setAnswers(submission);
       inFlightRef.current = true;
 
-      const terminal = (step === 1 && submission.isEcommerce === false) || step === 6;
+      const terminal =
+        (step === 1 && submission.isEcommerce === false) ||
+        (step === 2 && submission.brandCategory === DISQUALIFIED_BRAND_CATEGORY) ||
+        step === TOTAL_STEPS;
       if (!terminal) {
         const nextStep = step + 1;
         track("question_answered", String(step));
@@ -633,11 +670,15 @@ export default function AppticsForm({
       if (step === 1 && (key === "a" || key === "b")) {
         updateAnswer("isEcommerce", key === "a");
       }
-      if (step === 5) {
+      if (step === 2) {
+        const index = ["a", "b", "c", "d"].indexOf(key);
+        if (index >= 0) updateAnswer("brandCategory", brandCategoryOptions[index].value);
+      }
+      if (step === 6) {
         const index = ["a", "b", "c", "d"].indexOf(key);
         if (index >= 0) updateAnswer("revenue", revenueOptions[index].value);
       }
-      if (step === 6 && (key === "a" || key === "b")) {
+      if (step === 7 && (key === "a" || key === "b")) {
         updateAnswer("hasUsUkCanadianEntity", key === "a");
       }
     };
@@ -651,8 +692,8 @@ export default function AppticsForm({
     <>
       <style>{styles}</style>
       <main className="apptics-form">
-        <div className="apptics-progress" aria-label={`${step} of 6`}>
-          <span style={{ width: `${(step / 6) * 100}%` }} />
+        <div className="apptics-progress" aria-label={`${step} of ${TOTAL_STEPS}`}>
+          <span style={{ width: `${(step / TOTAL_STEPS) * 100}%` }} />
         </div>
 
         <section ref={stageRef} className="apptics-stage" key={step}>
@@ -699,6 +740,27 @@ export default function AppticsForm({
               ) : null}
 
               {step === 2 ? (
+                <fieldset className="apptics-choices">
+                  <legend style={{ position: "absolute", opacity: 0 }}>
+                    What category best describes your brand/ecommerce store?
+                  </legend>
+                  {brandCategoryOptions.map((option, index) => (
+                    <Choice
+                      key={option.value}
+                      name="brand-category"
+                      shortcut={String.fromCharCode(65 + index)}
+                      selected={answers.brandCategory === option.value}
+                      onChange={() => {
+                        void continueAfterChoice({ brandCategory: option.value });
+                      }}
+                    >
+                      {option.label}
+                    </Choice>
+                  ))}
+                </fieldset>
+              ) : null}
+
+              {step === 3 ? (
                 <input
                   className="apptics-input"
                   autoComplete="name"
@@ -708,7 +770,7 @@ export default function AppticsForm({
                 />
               ) : null}
 
-              {step === 3 ? (
+              {step === 4 ? (
                 <input
                   className="apptics-input"
                   type="email"
@@ -720,7 +782,7 @@ export default function AppticsForm({
                 />
               ) : null}
 
-              {step === 4 ? (
+              {step === 5 ? (
                 <input
                   className="apptics-input"
                   type="url"
@@ -731,7 +793,7 @@ export default function AppticsForm({
                 />
               ) : null}
 
-              {step === 5 ? (
+              {step === 6 ? (
                 <fieldset className="apptics-choices">
                   <legend style={{ position: "absolute", opacity: 0 }}>
                     What is your current monthly revenue?
@@ -754,7 +816,7 @@ export default function AppticsForm({
                 </fieldset>
               ) : null}
 
-              {step === 6 ? (
+              {step === 7 ? (
                 <fieldset className="apptics-choices">
                   <legend style={{ position: "absolute", opacity: 0 }}>
                     Do you have a US LLC or UK LTD or Canadian corp
@@ -796,14 +858,14 @@ export default function AppticsForm({
                 disabled={loading}
                 onClick={() => void next()}
               >
-                {loading ? "..." : step === 6 ? "Submit" : "OK"}
+                {loading ? "..." : step === TOTAL_STEPS ? "Submit" : "OK"}
               </button>
             </div>
           </div>
         </section>
 
         <footer className="apptics-footer">
-          <span>{step} of 6</span>
+          <span>{step} of {TOTAL_STEPS}</span>
           <button
             className="apptics-back"
             type="button"
