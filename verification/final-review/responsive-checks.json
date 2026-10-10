@@ -1,0 +1,86 @@
+[
+  {
+    "headline": "32px",
+    "heroHeight": 900,
+    "overflow": false,
+    "route": "/",
+    "width": 320
+  },
+  {
+    "headline": "32px",
+    "heroHeight": 900,
+    "overflow": false,
+    "route": "/",
+    "width": 375
+  },
+  {
+    "headline": "32px",
+    "heroHeight": 900,
+    "overflow": false,
+    "route": "/",
+    "width": 390
+  },
+  {
+    "headline": "32px",
+    "heroHeight": 900,
+    "overflow": false,
+    "route": "/",
+    "width": 768
+  },
+  {
+    "headline": "38.4px",
+    "heroHeight": 900,
+    "overflow": false,
+    "route": "/",
+    "width": 1024
+  },
+  {
+    "headline": "49.536px",
+    "heroHeight": 900,
+    "overflow": false,
+    "route": "/",
+    "width": 1440
+  },
+  {
+    "headline": "32px",
+    "heroHeight": 868,
+    "overflow": false,
+    "route": "/payments/",
+    "width": 320
+  },
+  {
+    "headline": "32px",
+    "heroHeight": 730,
+    "overflow": false,
+    "route": "/payments/",
+    "width": 375
+  },
+  {
+    "headline": "32px",
+    "heroHeight": 730,
+    "overflow": false,
+    "route": "/payments/",
+    "width": 390
+  },
+  {
+    "headline": "32px",
+    "heroHeight": 650,
+    "overflow": false,
+    "route": "/payments/",
+    "width": 768
+  },
+  {
+    "headline": "38.4px",
+    "heroHeight": 778.578125,
+    "overflow": false,
+    "route": "/payments/",
+    "width": 1024
+  },
+  {
+    "headline": "49.536px",
+    "heroHeight": 802.640625,
+    "overflow": false,
+    "route": "/payments/",
+    "width": 1440
+  }
+]

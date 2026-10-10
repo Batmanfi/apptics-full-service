@@ -14,3 +14,11 @@ Built and checked the production `dist/` output in Chrome against the current Pa
 - Contact, AUP, Terms and Privacy destinations returned HTTP 200. Social destinations remain the existing URLs. Meta Pixel, Clarity, attribution, submission integration and Vercel Analytics are retained.
 
 No unresolved implementation issue was found. Deployment is handled by the repository's existing Vercel integration after the main-branch push.
+
+## Final browser review
+
+The user's approved review supersedes the earlier exact Paper dimensions. Both pages use shared mobile typography tokens (32/36 hero, 28/32 section headings, 22/26 card headings, 16/22 body). The operator story keeps its explicitly requested 15/21 size. Desktop sections are capped at 1100px with a compact 0.8 scale; separately annotated desktop sizes remain explicit. Dashboard sizing follows width while its container clips the lower portion.
+
+Final build/check and diff whitespace checks passed. The minified production output was checked at 320, 375, 390, 768, 1024 and 1440px, without horizontal overflow. Measurements and the last mobile alignment/title screenshots are in `final-review/`. Both qualification cards have an 8px bullet offset against the 22px first text line. The audit headline balances into two lines at 390px. Narrow windows may wrap additional lines instead of clipping text.
+
+Both CTA modal entry points, Escape/focus restoration, FAQ keyboard toggling, the Wistia player, and the auxiliary routes were checked again. The earlier full submission verification still applies because the form and submission logic were unchanged. The shared CSS ships minified; no runtime scaling script or extra framework was added. Local annotation exports are excluded from the production build.

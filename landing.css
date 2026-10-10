@@ -147,8 +147,8 @@ details > p {
 }
 .image-apptics-logo {
   flex-shrink: 0;
-  height: 24px;
-  width: 93px;
+  height: calc(24px * var(--landing-scale, 1));
+  width: calc(93px * var(--landing-scale, 1));
   object-fit: contain;
   object-position: 50%;
   display: block;
@@ -167,10 +167,10 @@ details > p {
   display: flex;
   flex-wrap: wrap;
   font-family: var(--font-sans);
-  font-size: 20px;
+  font-size: calc(20px * var(--landing-scale, 1));
   font-weight: var(--font-weight-medium);
   justify-content: center;
-  line-height: 20px;
+  line-height: calc(20px * var(--landing-scale, 1));
   text-align: center;
   text-transform: capitalize;
   width: max-content;
@@ -188,7 +188,7 @@ details > p {
   text-align: center;
   width: 100%;
   white-space: normal;
-  max-width: 1040px;
+  max-width: calc(1040px * var(--landing-scale, 1));
 }
 .hero-promise {
   color: var(--color-primary-electric);
@@ -200,11 +200,11 @@ details > p {
   font-family: var(--font-sans);
   font-size: var(--text-heading-sm);
   justify-content: center;
-  line-height: 31px;
+  line-height: calc(31px * var(--landing-scale, 1));
   text-align: center;
   text-wrap: balance;
   width: 100%;
-  max-width: 850px;
+  max-width: calc(850px * var(--landing-scale, 1));
 }
 .stack-hero-action {
   align-items: center;
@@ -223,10 +223,10 @@ details > p {
   display: flex;
   flex-shrink: 0;
   gap: var(--spacing-copy-gap);
-  height: 80px;
+  height: calc(80px * var(--landing-scale, 1));
   justify-content: center;
-  padding-block: 26px;
-  padding-inline: 34px;
+  padding-block: calc(26px * var(--landing-scale, 1));
+  padding-inline: calc(34px * var(--landing-scale, 1));
   width: fit-content;
   border: 0;
   cursor: pointer;
@@ -235,14 +235,14 @@ details > p {
 .text-button-label {
   color: var(--color-background);
   font-family: var(--font-sans);
-  font-size: 21px;
+  font-size: calc(21px * var(--landing-scale, 1));
   font-weight: 600;
   line-height: var(--leading-body);
   width: max-content;
 }
 .icon-arrow-up-right {
-  width: 24px;
-  height: 24px;
+  width: calc(24px * var(--landing-scale, 1));
+  height: calc(24px * var(--landing-scale, 1));
   flex-shrink: 0;
 }
 .shape-icon-path {
@@ -254,14 +254,14 @@ details > p {
   height: fit-content;
   position: relative;
   width: 100%;
-  max-width: 1440px;
+  max-width: calc(1440px * var(--landing-scale, 1));
 }
 .image-crmdashboard {
   border-radius: var(--radius-lg);
   flex-shrink: 0;
-  height: 722px;
+  height: calc(722px * var(--landing-scale, 1));
   width: 100%;
-  max-width: 1296px;
+  max-width: calc(1296px * var(--landing-scale, 1));
   object-fit: contain;
   object-position: 50%;
   display: block;
@@ -275,7 +275,7 @@ details > p {
   bottom: 0;
   display: flex;
   gap: var(--spacing-6);
-  height: 361px;
+  height: calc(361px * var(--landing-scale, 1));
   justify-content: space-around;
   left: 0;
   padding-block: var(--spacing-12);
@@ -292,11 +292,11 @@ details > p {
   flex-direction: column;
   flex-shrink: 0;
   gap: var(--spacing-3);
-  height: 220px;
+  height: calc(220px * var(--landing-scale, 1));
   justify-content: center;
   padding: var(--spacing-7);
   width: 100%;
-  max-width: 400px;
+  max-width: calc(400px * var(--landing-scale, 1));
 }
 .text-heading {
   background-clip: text;
@@ -308,15 +308,15 @@ details > p {
   );
   color: transparent;
   font-family: var(--font-sans);
-  font-size: 80px;
+  font-size: calc(80px * var(--landing-scale, 1));
   font-weight: 600;
   letter-spacing: -0.05em;
-  line-height: 80px;
+  line-height: calc(80px * var(--landing-scale, 1));
 }
 .text-copy-2 {
   color: var(--color-text);
   font-family: var(--font-sans);
-  font-size: 20px;
+  font-size: calc(20px * var(--landing-scale, 1));
   font-weight: 600;
   letter-spacing: -0.03em;
   line-height: var(--leading-body);
@@ -331,10 +331,10 @@ details > p {
   );
   color: transparent;
   font-family: var(--font-sans);
-  font-size: 80px;
+  font-size: calc(80px * var(--landing-scale, 1));
   font-weight: 600;
   letter-spacing: -0.05em;
-  line-height: 120px;
+  line-height: calc(120px * var(--landing-scale, 1));
 }
 .section-02-checkout {
   align-items: center;
@@ -352,15 +352,15 @@ details > p {
   display: flex;
   flex-wrap: wrap;
   font-family: var(--font-sans);
-  font-size: 48px;
+  font-size: calc(48px * var(--landing-scale, 1));
   font-weight: 600;
   justify-content: center;
   letter-spacing: var(--tracking-tight);
-  line-height: 56px;
+  line-height: calc(56px * var(--landing-scale, 1));
   text-align: center;
   text-wrap: balance;
   width: 100%;
-  max-width: 978px;
+  max-width: calc(978px * var(--landing-scale, 1));
 }
 .text-copy-3 {
   color: var(--color-text);
@@ -373,7 +373,7 @@ details > p {
   text-align: center;
   white-space: normal;
   width: 100%;
-  max-width: 933px;
+  max-width: calc(933px * var(--landing-scale, 1));
 }
 .stack-checkout-content {
   align-items: center;
@@ -393,7 +393,7 @@ details > p {
   flex-shrink: 0;
   gap: var(--spacing-6);
   width: 100%;
-  max-width: 544px;
+  max-width: calc(544px * var(--landing-scale, 1));
 }
 .text-copy-4 {
   color: var(--color-primary-electric);
@@ -406,20 +406,20 @@ details > p {
 .checkout-card-title {
   color: var(--color-text);
   font-family: var(--font-sans);
-  font-size: 40px;
+  font-size: calc(40px * var(--landing-scale, 1));
   font-weight: 600;
   letter-spacing: var(--tracking-tight);
-  line-height: 46px;
+  line-height: calc(46px * var(--landing-scale, 1));
   width: 100%;
-  max-width: 480px;
+  max-width: calc(480px * var(--landing-scale, 1));
 }
 .text-copy-5 {
   color: var(--color-text);
   font-family: var(--font-sans);
-  font-size: 20px;
-  line-height: 31px;
+  font-size: calc(20px * var(--landing-scale, 1));
+  line-height: calc(31px * var(--landing-scale, 1));
   width: 100%;
-  max-width: 510px;
+  max-width: calc(510px * var(--landing-scale, 1));
 }
 .row-checkout-custom {
   align-items: start;
@@ -430,16 +430,16 @@ details > p {
   gap: var(--spacing-4);
   padding-top: var(--spacing-4);
   width: 100%;
-  max-width: 544px;
+  max-width: calc(544px * var(--landing-scale, 1));
 }
 .icon-check {
   color: var(--color-primary-electric);
   flex-shrink: 0;
   font-family: var(--font-sans);
   font-size: var(--text-body);
-  height: 29px;
-  line-height: 29px;
-  width: 24px;
+  height: calc(29px * var(--landing-scale, 1));
+  line-height: calc(29px * var(--landing-scale, 1));
+  width: calc(24px * var(--landing-scale, 1));
 }
 .text-copy-6 {
   color: var(--color-text);
@@ -447,9 +447,9 @@ details > p {
   font-family: var(--font-sans);
   font-size: var(--text-body);
   font-weight: 500;
-  line-height: 29px;
+  line-height: calc(29px * var(--landing-scale, 1));
   width: 100%;
-  max-width: 500px;
+  max-width: calc(500px * var(--landing-scale, 1));
 }
 .image-checkout-upsells {
   background-origin: border-box;
@@ -458,10 +458,10 @@ details > p {
   border-style: solid;
   border-width: 1px;
   flex-shrink: 0;
-  height: 590px;
+  height: calc(590px * var(--landing-scale, 1));
   object-position: 50% 0%;
   width: 100%;
-  max-width: 640px;
+  max-width: calc(640px * var(--landing-scale, 1));
   object-fit: cover;
   display: block;
 }
@@ -483,15 +483,15 @@ details > p {
   display: flex;
   flex-wrap: wrap;
   font-family: var(--font-sans);
-  font-size: 48px;
+  font-size: calc(48px * var(--landing-scale, 1));
   font-weight: 600;
   justify-content: center;
   letter-spacing: var(--tracking-tight);
-  line-height: 56px;
+  line-height: calc(56px * var(--landing-scale, 1));
   text-align: center;
   text-wrap: balance;
   width: 100%;
-  max-width: 1100px;
+  max-width: calc(1100px * var(--landing-scale, 1));
 }
 .stack-deliverables {
   align-items: center;
@@ -521,13 +521,13 @@ details > p {
   flex-shrink: 0;
   overflow: clip;
   width: 100%;
-  max-width: 612px;
+  max-width: calc(612px * var(--landing-scale, 1));
 }
 .image-subscriptions {
   flex-shrink: 0;
-  height: 360px;
+  height: calc(360px * var(--landing-scale, 1));
   width: 100%;
-  max-width: 612px;
+  max-width: calc(612px * var(--landing-scale, 1));
   object-fit: cover;
   object-position: 50% 20%;
   display: block;
@@ -559,7 +559,7 @@ details > p {
   color: var(--color-text);
   font-family: var(--font-sans);
   font-size: var(--text-body);
-  line-height: 29px;
+  line-height: calc(29px * var(--landing-scale, 1));
 }
 .card-analytics {
   background-color: var(--color-background);
@@ -570,7 +570,7 @@ details > p {
   flex-shrink: 0;
   overflow: clip;
   width: 100%;
-  max-width: 612px;
+  max-width: calc(612px * var(--landing-scale, 1));
 }
 .text-analytics-heading {
   color: var(--color-text);
@@ -591,7 +591,7 @@ details > p {
   gap: var(--spacing-5);
   padding: var(--spacing-8);
   width: 100%;
-  max-width: 400px;
+  max-width: calc(400px * var(--landing-scale, 1));
 }
 .icon-container-vaulting {
   align-items: center;
@@ -599,14 +599,14 @@ details > p {
   border-radius: var(--radius-icon);
   display: flex;
   flex-shrink: 0;
-  height: 48px;
+  height: calc(48px * var(--landing-scale, 1));
   justify-content: center;
   padding: var(--spacing-2);
-  width: 48px;
+  width: calc(48px * var(--landing-scale, 1));
 }
 .icon-product {
-  width: 42px;
-  height: 42px;
+  width: calc(42px * var(--landing-scale, 1));
+  height: calc(42px * var(--landing-scale, 1));
   flex-shrink: 0;
   display: inline-block;
 }
@@ -618,7 +618,7 @@ details > p {
 .text-label-2 {
   color: var(--color-primary-electric);
   font-family: var(--font-sans);
-  font-size: 14px;
+  font-size: calc(14px * var(--landing-scale, 1));
   font-weight: 600;
   letter-spacing: 0.04em;
   line-height: var(--leading-body-sm);
@@ -649,10 +649,10 @@ details > p {
   display: flex;
   flex-shrink: 0;
   gap: var(--spacing-copy-gap);
-  height: 80px;
+  height: calc(80px * var(--landing-scale, 1));
   justify-content: center;
-  padding-block: 26px;
-  padding-inline: 34px;
+  padding-block: calc(26px * var(--landing-scale, 1));
+  padding-inline: calc(34px * var(--landing-scale, 1));
   width: fit-content;
   border: 0;
   cursor: pointer;
@@ -674,15 +674,15 @@ details > p {
   display: flex;
   flex-wrap: wrap;
   font-family: var(--font-sans);
-  font-size: 48px;
+  font-size: calc(48px * var(--landing-scale, 1));
   font-weight: 600;
   justify-content: center;
   letter-spacing: -0.035em;
-  line-height: 56px;
+  line-height: calc(56px * var(--landing-scale, 1));
   text-align: center;
   white-space: normal;
   width: 100%;
-  max-width: 800px;
+  max-width: calc(800px * var(--landing-scale, 1));
 }
 .card-step01-audit {
   background-image: linear-gradient(
@@ -726,7 +726,7 @@ details > p {
   font-size: var(--text-body-sm);
   font-weight: 600;
   letter-spacing: var(--tracking-tight);
-  line-height: 20px;
+  line-height: calc(20px * var(--landing-scale, 1));
   text-transform: uppercase;
   width: max-content;
 }
@@ -734,7 +734,7 @@ details > p {
   align-self: stretch;
   color: var(--color-text);
   font-family: var(--font-sans);
-  font-size: 27px;
+  font-size: calc(27px * var(--landing-scale, 1));
   font-weight: 600;
   letter-spacing: -0.03em;
   line-height: var(--leading-body);
@@ -750,7 +750,7 @@ details > p {
   display: flex;
   gap: var(--spacing-4);
   width: 100%;
-  max-width: 324px;
+  max-width: calc(324px * var(--landing-scale, 1));
 }
 .icon-container-bullet {
   align-items: center;
@@ -758,9 +758,9 @@ details > p {
   border-radius: var(--radius-md);
   display: flex;
   flex-shrink: 0;
-  height: 18px;
+  height: calc(18px * var(--landing-scale, 1));
   justify-content: center;
-  width: 18px;
+  width: calc(18px * var(--landing-scale, 1));
 }
 .text-copy-8 {
   color: var(--color-text);
@@ -797,7 +797,7 @@ details > p {
   font-weight: var(--font-weight-regular);
   letter-spacing: var(--tracking-button);
   line-height: var(--leading-body-sm);
-  width: 0px;
+  width: calc(0px * var(--landing-scale, 1));
 }
 .section-05-operators {
   align-items: center;
@@ -808,7 +808,7 @@ details > p {
   gap: var(--spacing-9);
   height: fit-content;
   padding-block: var(--spacing-18);
-  padding-inline: 40px;
+  padding-inline: calc(40px * var(--landing-scale, 1));
   width: 100%;
   max-width: none;
 }
@@ -830,16 +830,16 @@ details > p {
 .operators-title {
   color: var(--color-text);
   font-family: var(--font-sans);
-  font-size: 48px;
+  font-size: calc(48px * var(--landing-scale, 1));
   font-weight: 600;
   letter-spacing: -0.03em;
-  line-height: 58px;
+  line-height: calc(58px * var(--landing-scale, 1));
   width: 100%;
 }
 .text-copy-11 {
   color: var(--color-text);
   font-family: var(--font-sans);
-  font-size: 17px;
+  font-size: calc(17px * var(--landing-scale, 1));
   line-height: var(--leading-body);
   width: 100%;
 }
@@ -856,10 +856,10 @@ details > p {
   flex-direction: column;
   flex-shrink: 0;
   gap: var(--spacing-8);
-  height: 517px;
+  height: calc(517px * var(--landing-scale, 1));
   overflow: clip;
   width: 100%;
-  max-width: 463px;
+  max-width: calc(463px * var(--landing-scale, 1));
   object-fit: cover;
   object-position: 50%;
 }
@@ -870,10 +870,10 @@ details > p {
   flex-direction: column;
   flex-shrink: 0;
   gap: var(--spacing-8);
-  height: 517px;
+  height: calc(517px * var(--landing-scale, 1));
   overflow: clip;
   width: 100%;
-  max-width: 725px;
+  max-width: calc(725px * var(--landing-scale, 1));
   object-fit: cover;
   object-position: 50%;
 }
@@ -882,14 +882,14 @@ details > p {
   display: flex;
   flex-wrap: wrap;
   font-family: var(--font-sans);
-  font-size: 48px;
+  font-size: calc(48px * var(--landing-scale, 1));
   font-weight: 600;
   justify-content: center;
   letter-spacing: -0.03em;
-  line-height: 58px;
+  line-height: calc(58px * var(--landing-scale, 1));
   text-align: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: calc(1200px * var(--landing-scale, 1));
 }
 .stack-qualification-cards {
   display: flex;
@@ -908,17 +908,17 @@ details > p {
   flex-direction: column;
   flex-shrink: 0;
   gap: var(--spacing-6);
-  height: 512px;
-  padding: 30px;
+  height: auto;
+  padding: calc(30px * var(--landing-scale, 1));
   width: 100%;
-  max-width: 588px;
+  max-width: calc(588px * var(--landing-scale, 1));
 }
 .text-heading-10 {
   color: var(--color-background);
   font-family: var(--font-sans);
   font-size: var(--text-card-heading);
   font-weight: 600;
-  line-height: 34px;
+  line-height: calc(34px * var(--landing-scale, 1));
 }
 .stack-positive-criteria {
   display: flex;
@@ -936,9 +936,9 @@ details > p {
   background-color: var(--color-background);
   border-radius: var(--radius-pill);
   flex-shrink: 0;
-  height: 6px;
+  height: calc(6px * var(--landing-scale, 1));
   margin-top: var(--spacing-button-gap);
-  width: 6px;
+  width: calc(6px * var(--landing-scale, 1));
 }
 .text-copy-12 {
   color: var(--color-background);
@@ -946,7 +946,7 @@ details > p {
   flex-grow: 1;
   font-family: var(--font-sans);
   font-size: var(--text-body);
-  line-height: 27px;
+  line-height: calc(27px * var(--landing-scale, 1));
 }
 .card-qualification-negative {
   background-color: var(--color-background);
@@ -956,25 +956,25 @@ details > p {
   flex-direction: column;
   flex-shrink: 0;
   gap: var(--spacing-6);
-  height: 512px;
-  padding: 30px;
+  height: auto;
+  padding: calc(30px * var(--landing-scale, 1));
   width: 100%;
-  max-width: 588px;
+  max-width: calc(588px * var(--landing-scale, 1));
 }
 .text-heading-11 {
   color: var(--color-text);
   font-family: var(--font-sans);
   font-size: var(--text-card-heading);
   font-weight: 600;
-  line-height: 34px;
+  line-height: calc(34px * var(--landing-scale, 1));
 }
 .shape-bullet-2 {
   background-color: var(--color-primary-electric);
   border-radius: var(--radius-pill);
   flex-shrink: 0;
-  height: 6px;
+  height: calc(6px * var(--landing-scale, 1));
   margin-top: var(--spacing-button-gap);
-  width: 6px;
+  width: calc(6px * var(--landing-scale, 1));
 }
 .text-copy-13 {
   color: var(--color-text);
@@ -982,7 +982,7 @@ details > p {
   flex-grow: 1;
   font-family: var(--font-sans);
   font-size: var(--text-body);
-  line-height: 27px;
+  line-height: calc(27px * var(--landing-scale, 1));
 }
 .section-07-audit {
   align-items: center;
@@ -1000,9 +1000,9 @@ details > p {
   justify-content: center;
   margin-left: var(--spacing-8);
   margin-right: var(--spacing-8);
-  min-height: 600px;
+  min-height: calc(600px * var(--landing-scale, 1));
   padding-block: var(--spacing-24);
-  padding-inline: 192px;
+  padding-inline: calc(192px * var(--landing-scale, 1));
   width: 100%;
   max-width: none;
 }
@@ -1011,27 +1011,27 @@ details > p {
   display: flex;
   flex-wrap: wrap;
   font-family: var(--font-sans);
-  font-size: 48px;
+  font-size: calc(48px * var(--landing-scale, 1));
   font-weight: 600;
   justify-content: center;
   letter-spacing: -0.035em;
-  line-height: 56px;
+  line-height: calc(56px * var(--landing-scale, 1));
   text-align: center;
   white-space: normal;
   width: 100%;
-  max-width: 1056px;
+  max-width: calc(1056px * var(--landing-scale, 1));
 }
 .text-heading-12 {
   color: var(--color-background);
   display: flex;
   flex-wrap: wrap;
   font-family: var(--font-sans);
-  font-size: 28px;
+  font-size: calc(28px * var(--landing-scale, 1));
   justify-content: center;
-  line-height: 34px;
+  line-height: calc(34px * var(--landing-scale, 1));
   text-align: center;
   width: 100%;
-  max-width: 850px;
+  max-width: calc(850px * var(--landing-scale, 1));
 }
 .button-audit-closing {
   align-items: center;
@@ -1039,10 +1039,10 @@ details > p {
   border-radius: var(--radius-pill);
   display: flex;
   flex-shrink: 0;
-  height: 60px;
+  height: calc(60px * var(--landing-scale, 1));
   justify-content: center;
   width: 100%;
-  max-width: 256px;
+  max-width: calc(256px * var(--landing-scale, 1));
   border: 0;
   cursor: pointer;
   text-align: center;
@@ -1067,7 +1067,7 @@ details > p {
   flex-direction: column;
   gap: var(--spacing-6);
   height: fit-content;
-  min-height: 0px;
+  min-height: calc(0px * var(--landing-scale, 1));
   overflow: clip;
   padding-bottom: var(--spacing-8);
   padding-inline: var(--spacing-24);
@@ -1092,18 +1092,18 @@ details > p {
   gap: var(--spacing-5);
   justify-content: space-between;
   width: 100%;
-  max-width: 400px;
+  max-width: calc(400px * var(--landing-scale, 1));
 }
 .stack-footer-logo {
   display: flex;
   flex-shrink: 0;
-  height: 36px;
-  width: 150px;
+  height: calc(36px * var(--landing-scale, 1));
+  width: calc(150px * var(--landing-scale, 1));
 }
 .image-apptics-logo-2 {
   flex-shrink: 0;
-  height: 36px;
-  width: 150px;
+  height: calc(36px * var(--landing-scale, 1));
+  width: calc(150px * var(--landing-scale, 1));
   object-fit: contain;
   object-position: 50%;
   display: block;
@@ -1119,16 +1119,16 @@ details > p {
   border-radius: var(--radius-pill);
   display: flex;
   flex-shrink: 0;
-  height: 40px;
+  height: calc(40px * var(--landing-scale, 1));
   justify-content: center;
-  width: 40px;
+  width: calc(40px * var(--landing-scale, 1));
 }
 .image-brand-asset {
   filter: brightness(0%);
   flex-shrink: 0;
-  height: 22px;
+  height: calc(22px * var(--landing-scale, 1));
   opacity: 0.65;
-  width: 22px;
+  width: calc(22px * var(--landing-scale, 1));
   object-fit: fill;
   object-position: 50%;
   display: block;
@@ -1136,9 +1136,9 @@ details > p {
 .image-brand-asset-2 {
   filter: brightness(0%);
   flex-shrink: 0;
-  height: 20px;
+  height: calc(20px * var(--landing-scale, 1));
   opacity: 0.65;
-  width: 20px;
+  width: calc(20px * var(--landing-scale, 1));
   object-fit: fill;
   object-position: 50%;
   display: block;
@@ -1180,7 +1180,7 @@ details > p {
   color: var(--color-text);
   font-family: var(--font-sans);
   font-size: var(--text-body-sm);
-  line-height: 23px;
+  line-height: calc(23px * var(--landing-scale, 1));
 }
 .stack-policy-links {
   align-items: center;
@@ -1191,7 +1191,7 @@ details > p {
   color: var(--color-text);
   font-family: var(--font-sans);
   font-size: var(--text-body-sm);
-  line-height: 23px;
+  line-height: calc(23px * var(--landing-scale, 1));
 }
 .stack-platform-disclaimer {
   align-content: center;
@@ -1203,10 +1203,10 @@ details > p {
 .text-platform-disclaimer {
   color: var(--color-text-muted);
   font-family: var(--font-sans);
-  font-size: 14px;
+  font-size: calc(14px * var(--landing-scale, 1));
   line-height: var(--leading-body-sm);
   width: 100%;
-  max-width: 1248px;
+  max-width: calc(1248px * var(--landing-scale, 1));
 }
 .page-payments-desktop {
   background-color: var(--color-background);
@@ -1232,10 +1232,10 @@ details > p {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  gap: 32px;
-  height: 1002px;
+  gap: calc(32px * var(--landing-scale, 1));
+  height: calc(1002px * var(--landing-scale, 1));
   overflow: clip;
-  padding-bottom: 380px;
+  padding-bottom: calc(380px * var(--landing-scale, 1));
   padding-inline: var(--spacing-24);
   padding-top: var(--spacing-12);
   width: 100%;
@@ -1243,8 +1243,8 @@ details > p {
 }
 .image-apptics-logo-3 {
   flex-shrink: 0;
-  height: 59px;
-  width: 124px;
+  height: calc(59px * var(--landing-scale, 1));
+  width: calc(124px * var(--landing-scale, 1));
   object-fit: contain;
   object-position: 50%;
   display: block;
@@ -1274,7 +1274,7 @@ details > p {
   align-items: center;
   display: flex;
   flex-direction: column;
-  max-width: 1080px;
+  max-width: calc(1080px * var(--landing-scale, 1));
   width: 100%;
 }
 .text-hero-headline {
@@ -1282,11 +1282,11 @@ details > p {
   display: flex;
   flex-wrap: wrap;
   font-family: var(--font-sans);
-  font-size: 72px;
+  font-size: calc(72px * var(--landing-scale, 1));
   font-weight: 600;
   justify-content: center;
   letter-spacing: var(--tracking-display);
-  line-height: 78px;
+  line-height: calc(78px * var(--landing-scale, 1));
   text-align: center;
   width: 100%;
 }
@@ -1298,7 +1298,7 @@ details > p {
   font-size: var(--text-card-heading);
   justify-content: center;
   line-height: var(--leading-card-heading);
-  max-width: 880px;
+  max-width: calc(880px * var(--landing-scale, 1));
   text-align: center;
   text-wrap: balance;
   width: 100%;
@@ -1331,9 +1331,9 @@ details > p {
   box-shadow: color-mix(var(--color-primary-electric) 20%, transparent) 0px 5px
     80px;
   flex-shrink: 0;
-  height: 773px;
+  height: calc(773px * var(--landing-scale, 1));
   width: 100%;
-  max-width: 1003px;
+  max-width: calc(1003px * var(--landing-scale, 1));
   object-fit: cover;
   object-position: 50%;
   display: block;
@@ -1357,11 +1357,11 @@ details > p {
   display: flex;
   flex-wrap: wrap;
   font-family: var(--font-sans);
-  font-size: 48px;
+  font-size: calc(48px * var(--landing-scale, 1));
   font-weight: 600;
   justify-content: center;
   letter-spacing: var(--tracking-display);
-  line-height: 54px;
+  line-height: calc(54px * var(--landing-scale, 1));
   text-align: center;
   white-space: normal;
   width: 100%;
@@ -1371,10 +1371,10 @@ details > p {
   display: flex;
   flex-wrap: wrap;
   font-family: var(--font-sans);
-  font-size: 22px;
+  font-size: calc(22px * var(--landing-scale, 1));
   justify-content: center;
   line-height: var(--leading-card-heading);
-  max-width: 1140px;
+  max-width: calc(1140px * var(--landing-scale, 1));
   text-align: center;
   width: 100%;
 }
@@ -1393,12 +1393,12 @@ details > p {
   flex-basis: 0%;
   flex-direction: column;
   flex-grow: 1;
-  min-width: 0px;
+  min-width: calc(0px * var(--landing-scale, 1));
   overflow: clip;
 }
 .blue-shield-icon {
   flex-shrink: 0;
-  height: 246px;
+  height: calc(246px * var(--landing-scale, 1));
   width: 100%;
   object-fit: cover;
   object-position: 50%;
@@ -1408,15 +1408,15 @@ details > p {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-4);
-  padding: 28px;
+  padding: calc(28px * var(--landing-scale, 1));
 }
 .text-approved-where-strip {
   color: var(--color-text);
   font-family: var(--font-sans);
-  font-size: 28px;
+  font-size: calc(28px * var(--landing-scale, 1));
   font-weight: 600;
   letter-spacing: var(--tracking-tight);
-  line-height: 34px;
+  line-height: calc(34px * var(--landing-scale, 1));
   width: 100%;
 }
 .text-benefit-body-approved {
@@ -1450,7 +1450,7 @@ details > p {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-6);
-  padding-block: 40px;
+  padding-block: calc(40px * var(--landing-scale, 1));
   padding-inline: var(--spacing-24);
   width: 100%;
   max-width: none;
@@ -1460,7 +1460,7 @@ details > p {
   display: flex;
   flex-wrap: wrap;
   font-family: var(--font-sans);
-  font-size: 22px;
+  font-size: calc(22px * var(--landing-scale, 1));
   justify-content: center;
   line-height: var(--leading-card-heading);
   text-align: center;
@@ -1474,8 +1474,8 @@ details > p {
 .image-app-logo1 {
   flex-basis: 0%;
   flex-grow: 1;
-  height: 64px;
-  min-width: 0px;
+  height: calc(64px * var(--landing-scale, 1));
+  min-width: calc(0px * var(--landing-scale, 1));
   object-fit: contain;
   object-position: 50%;
   display: block;
@@ -1485,11 +1485,11 @@ details > p {
   display: flex;
   flex-wrap: wrap;
   font-family: var(--font-sans);
-  font-size: 48px;
+  font-size: calc(48px * var(--landing-scale, 1));
   font-weight: 600;
   justify-content: center;
   letter-spacing: var(--tracking-display);
-  line-height: 54px;
+  line-height: calc(54px * var(--landing-scale, 1));
   text-align: center;
   width: 100%;
 }
@@ -1497,13 +1497,13 @@ details > p {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-4);
-  min-height: 260px;
-  padding: 28px;
+  min-height: calc(260px * var(--landing-scale, 1));
+  padding: calc(28px * var(--landing-scale, 1));
 }
 .stack-testimonial-attribution {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: calc(4px * var(--landing-scale, 1));
 }
 .text-mohammed-z {
   color: var(--color-text);
@@ -1526,7 +1526,7 @@ details > p {
   background-size: cover;
   display: flex;
   flex-shrink: 0;
-  height: 520px;
+  height: calc(520px * var(--landing-scale, 1));
   justify-content: center;
   width: 100%;
 }
@@ -1537,7 +1537,7 @@ details > p {
   border-width: 1px;
   display: flex;
   flex-direction: column;
-  max-width: 1120px;
+  max-width: calc(1120px * var(--landing-scale, 1));
   overflow: clip;
   width: 100%;
 }
@@ -1559,13 +1559,13 @@ details > p {
   font-family: system-ui, sans-serif;
   font-size: var(--text-body);
   font-weight: 600;
-  line-height: 26px;
+  line-height: calc(26px * var(--landing-scale, 1));
 }
 .stack-provider-values {
   display: flex;
   flex-shrink: 0;
   width: 100%;
-  max-width: 540px;
+  max-width: calc(540px * var(--landing-scale, 1));
 }
 .cell-apptics {
   align-items: center;
@@ -1573,10 +1573,10 @@ details > p {
   display: flex;
   flex-shrink: 0;
   justify-content: center;
-  min-height: 80px;
+  min-height: calc(80px * var(--landing-scale, 1));
   padding-block: var(--spacing-4);
   padding-inline: var(--spacing-3);
-  width: 180px;
+  width: calc(180px * var(--landing-scale, 1));
 }
 .text-apptics {
   color: var(--color-background);
@@ -1584,7 +1584,7 @@ details > p {
   font-family: system-ui, sans-serif;
   font-size: var(--text-body);
   font-weight: 600;
-  line-height: 26px;
+  line-height: calc(26px * var(--landing-scale, 1));
 }
 .cell-stripe {
   align-items: center;
@@ -1592,17 +1592,17 @@ details > p {
   display: flex;
   flex-shrink: 0;
   justify-content: center;
-  min-height: 80px;
+  min-height: calc(80px * var(--landing-scale, 1));
   padding-block: var(--spacing-4);
   padding-inline: var(--spacing-3);
-  width: 180px;
+  width: calc(180px * var(--landing-scale, 1));
 }
 .text-stripe {
   color: var(--color-text-muted);
   display: flex;
   font-family: system-ui, sans-serif;
   font-size: var(--text-body);
-  line-height: 26px;
+  line-height: calc(26px * var(--landing-scale, 1));
 }
 .row-comparison-1 {
   border-top-color: var(--color-border);
@@ -1616,7 +1616,7 @@ details > p {
   display: flex;
   flex-basis: 0%;
   flex-grow: 1;
-  min-width: 0px;
+  min-width: calc(0px * var(--landing-scale, 1));
   padding-block: var(--spacing-5);
   padding-inline: var(--spacing-7);
 }
@@ -1624,7 +1624,7 @@ details > p {
   color: var(--color-text);
   display: flex;
   font-family: system-ui, sans-serif;
-  font-size: 20px;
+  font-size: calc(20px * var(--landing-scale, 1));
   line-height: var(--leading-body);
 }
 .cell-apptics-2 {
@@ -1633,10 +1633,10 @@ details > p {
   display: flex;
   flex-shrink: 0;
   justify-content: center;
-  min-height: 68px;
+  min-height: calc(68px * var(--landing-scale, 1));
   padding-block: var(--spacing-4);
   padding-inline: var(--spacing-3);
-  width: 180px;
+  width: calc(180px * var(--landing-scale, 1));
 }
 .text {
   color: var(--color-background);
@@ -1644,7 +1644,7 @@ details > p {
   font-family: system-ui, sans-serif;
   font-size: var(--text-body);
   font-weight: 600;
-  line-height: 26px;
+  line-height: calc(26px * var(--landing-scale, 1));
 }
 .cell-stripe-2 {
   align-items: center;
@@ -1652,21 +1652,21 @@ details > p {
   display: flex;
   flex-shrink: 0;
   justify-content: center;
-  min-height: 68px;
+  min-height: calc(68px * var(--landing-scale, 1));
   padding-block: var(--spacing-4);
   padding-inline: var(--spacing-3);
-  width: 180px;
+  width: calc(180px * var(--landing-scale, 1));
 }
 .text-2 {
   color: var(--color-danger);
   display: flex;
   font-family: system-ui, sans-serif;
   font-size: var(--text-body);
-  line-height: 26px;
+  line-height: calc(26px * var(--landing-scale, 1));
 }
 .blue-payment-design {
   flex-shrink: 0;
-  height: 310px;
+  height: calc(310px * var(--landing-scale, 1));
   width: 100%;
   object-fit: cover;
   object-position: 50%;
@@ -1689,12 +1689,12 @@ details > p {
   color: var(--color-text);
   flex-shrink: 0;
   font-family: var(--font-sans);
-  font-size: 48px;
+  font-size: calc(48px * var(--landing-scale, 1));
   font-weight: 600;
   letter-spacing: var(--tracking-display);
-  line-height: 54px;
+  line-height: calc(54px * var(--landing-scale, 1));
   white-space: normal;
-  width: round(36%, 1px);
+  width: round(36%, calc(1px * var(--landing-scale, 1)));
 }
 .stack-faqaccordion {
   display: flex;
@@ -1702,15 +1702,15 @@ details > p {
   flex-direction: column;
   flex-grow: 1;
   gap: var(--spacing-3);
-  min-width: 0px;
+  min-width: calc(0px * var(--landing-scale, 1));
 }
 .stack-faqaccordion-content1 {
   border-color: var(--color-border);
-  border-radius: 18px;
+  border-radius: calc(18px * var(--landing-scale, 1));
   border-style: solid;
   border-width: 1px;
   display: block;
-  padding: 24px;
+  padding: calc(24px * var(--landing-scale, 1));
   width: 100%;
 }
 .faq-summary {
@@ -1725,13 +1725,13 @@ details > p {
   flex-basis: 0%;
   flex-grow: 1;
   font-family: var(--font-sans);
-  font-size: 20px;
+  font-size: calc(20px * var(--landing-scale, 1));
   font-weight: 500;
   line-height: var(--leading-body);
 }
 .faq-answer {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: calc(18px * var(--landing-scale, 1));
+  line-height: calc(28px * var(--landing-scale, 1));
   color: var(--color-text);
   font-family: var(--font-sans);
 }
@@ -1745,7 +1745,7 @@ details > p {
   flex-direction: column;
   gap: var(--spacing-6);
   height: fit-content;
-  min-height: 0px;
+  min-height: calc(0px * var(--landing-scale, 1));
   overflow: clip;
   padding-bottom: var(--spacing-8);
   padding-inline: var(--spacing-24);
@@ -1770,7 +1770,7 @@ details > p {
   gap: var(--spacing-5);
   justify-content: space-between;
   width: 100%;
-  max-width: 400px;
+  max-width: calc(400px * var(--landing-scale, 1));
 }
 .stack-footer-links-2 {
   align-items: start;
@@ -1809,7 +1809,7 @@ details > p {
   color: var(--color-text);
   font-family: var(--font-sans);
   font-size: var(--text-body-sm);
-  line-height: 23px;
+  line-height: calc(23px * var(--landing-scale, 1));
 }
 .stack-policy-links-2 {
   align-items: center;
@@ -1826,10 +1826,10 @@ details > p {
 .text-platform-disclaimer-2 {
   color: var(--color-text-muted);
   font-family: var(--font-sans);
-  font-size: 14px;
+  font-size: calc(14px * var(--landing-scale, 1));
   line-height: var(--leading-body-sm);
   width: 100%;
-  max-width: 1248px;
+  max-width: calc(1248px * var(--landing-scale, 1));
 }
 
 @media (max-width: 1023px) {
@@ -1840,9 +1840,9 @@ details > p {
     gap: var(--spacing-4);
     height: fit-content;
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
     overflow: clip;
-    padding-bottom: 216px;
+    padding-bottom: calc(216px * var(--landing-scale, 1));
     padding-inline: var(--spacing-5);
     position: relative;
   }
@@ -1870,7 +1870,7 @@ details > p {
     letter-spacing: -0.04em;
     line-height: var(--leading-heading-sm);
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
     white-space: normal;
   }
   .hero-promise {
@@ -1882,12 +1882,12 @@ details > p {
     height: fit-content;
     line-height: var(--leading-body-sm);
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
     position: relative;
   }
   .stack-hero-action {
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
     position: relative;
   }
   .button-audit-primary {
@@ -1917,14 +1917,14 @@ details > p {
     left: 0;
     right: 0;
     bottom: 0;
-    height: 216px;
+    height: calc(216px * var(--landing-scale, 1));
   }
   .image-crmdashboard {
     flex-shrink: initial;
     bottom: -67px;
-    height: 279px;
-    left: calc(50% - 0.5px);
-    min-width: 0px;
+    height: calc(279px * var(--landing-scale, 1));
+    left: calc(50% - calc(0.5px * var(--landing-scale, 1)));
+    min-width: calc(0px * var(--landing-scale, 1));
     position: absolute;
     translate: -50%;
     max-width: none;
@@ -1932,9 +1932,9 @@ details > p {
   .stack-outcome-cards {
     padding-block: initial;
     gap: var(--spacing-2);
-    height: 103px;
+    height: calc(103px * var(--landing-scale, 1));
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
     width: 100%;
     bottom: -18px;
     padding-inline: var(--spacing-3);
@@ -1949,9 +1949,9 @@ details > p {
     flex-grow: 1;
     gap: var(--spacing-1);
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
     padding: var(--spacing-3);
-    width: 0px;
+    width: calc(0px * var(--landing-scale, 1));
   }
   .text-heading {
     text-wrap: initial;
@@ -1961,10 +1961,10 @@ details > p {
   .text-copy-2 {
     display: flex;
     flex-wrap: wrap;
-    font-size: 8px;
+    font-size: calc(8px * var(--landing-scale, 1));
     font-weight: var(--font-weight-regular);
     justify-content: center;
-    line-height: 10px;
+    line-height: calc(10px * var(--landing-scale, 1));
     text-align: center;
     text-wrap: balance;
     width: 100%;
@@ -1988,7 +1988,7 @@ details > p {
     height: fit-content;
     line-height: var(--leading-heading);
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .text-copy-3 {
     text-wrap: initial;
@@ -1996,7 +1996,7 @@ details > p {
     height: fit-content;
     line-height: var(--leading-body);
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .stack-checkout-content {
     align-items: initial;
@@ -2008,13 +2008,13 @@ details > p {
     box-shadow: #1466d20d 0px 12px 32px;
     flex-direction: column;
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
     overflow: clip;
   }
   .stack-checkout-copy {
     height: fit-content;
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
     padding-block: var(--spacing-6);
     padding-inline: var(--spacing-5);
   }
@@ -2026,19 +2026,19 @@ details > p {
     font-size: var(--text-heading);
     line-height: var(--leading-heading);
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .text-copy-5 {
     text-wrap: initial;
     font-size: var(--text-body);
     line-height: var(--leading-body);
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .row-checkout-custom {
     height: fit-content;
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .icon-check {
     text-wrap: initial;
@@ -2049,8 +2049,8 @@ details > p {
     flex-basis: 0%;
     flex-grow: 1;
     max-width: 100%;
-    min-width: 0px;
-    width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
+    width: calc(0px * var(--landing-scale, 1));
   }
   .image-checkout-upsells {
     background-origin: initial;
@@ -2058,9 +2058,9 @@ details > p {
     border-radius: initial;
     border-style: initial;
     border-width: initial;
-    height: 340px;
+    height: calc(340px * var(--landing-scale, 1));
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .section-03-deliverables {
     padding-bottom: initial;
@@ -2076,29 +2076,29 @@ details > p {
     height: fit-content;
     line-height: var(--leading-heading);
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .stack-deliverables {
     padding-top: initial;
     height: fit-content;
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .stack-featured-cards {
     flex-direction: column;
     height: fit-content;
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .card-subscriptions {
     height: fit-content;
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .image-subscriptions {
-    height: 230px;
+    height: calc(230px * var(--landing-scale, 1));
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .stack-subscription-copy {
     padding: initial;
@@ -2122,7 +2122,7 @@ details > p {
   .card-analytics {
     height: fit-content;
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .text-analytics-heading {
     text-wrap: initial;
@@ -2133,7 +2133,7 @@ details > p {
     padding: initial;
     height: fit-content;
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
     padding-block: var(--spacing-6);
     padding-inline: var(--spacing-5);
   }
@@ -2145,7 +2145,7 @@ details > p {
   }
   .stack-deliverables-action {
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .button-audit-primary-2 {
     flex-shrink: initial;
@@ -2172,7 +2172,7 @@ details > p {
     height: fit-content;
     line-height: var(--leading-heading);
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .card-step01-audit {
     flex-shrink: 0;
@@ -2183,7 +2183,7 @@ details > p {
   }
   .stack-step01-heading {
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .implementation-card-title {
     text-wrap: initial;
@@ -2192,14 +2192,14 @@ details > p {
   }
   .stack-step01-details {
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .row-01 {
     align-items: start;
     gap: var(--spacing-3);
     height: fit-content;
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .icon-container-bullet {
     margin-top: var(--spacing-1);
@@ -2207,7 +2207,7 @@ details > p {
   .text-copy-8 {
     text-wrap: initial;
     line-height: var(--leading-button);
-    width: 0px;
+    width: calc(0px * var(--landing-scale, 1));
   }
   .text-copy-9 {
     text-wrap: initial;
@@ -2220,26 +2220,26 @@ details > p {
   .section-05-operators {
     gap: var(--spacing-6);
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
     padding-block: var(--spacing-12);
     padding-inline: var(--spacing-5);
   }
   .stack-operator-story {
     height: fit-content;
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .operators-title {
     text-wrap: initial;
     font-size: var(--text-heading);
     line-height: var(--leading-heading);
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .text-copy-11 {
     text-wrap: initial;
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .stack-operator-images {
     align-items: initial;
@@ -2250,14 +2250,14 @@ details > p {
     width: 100%;
   }
   .image-operator-portrait {
-    height: 280px;
+    height: calc(280px * var(--landing-scale, 1));
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .image-operator-team {
-    height: 280px;
+    height: calc(280px * var(--landing-scale, 1));
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .text-heading-9 {
     text-wrap: initial;
@@ -2265,19 +2265,19 @@ details > p {
     height: fit-content;
     line-height: var(--leading-heading);
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .stack-qualification-cards {
     flex-direction: column;
     height: fit-content;
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .card-qualification-positive {
     padding: initial;
     height: fit-content;
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
     padding-block: var(--spacing-6);
     padding-inline: var(--spacing-5);
   }
@@ -2287,11 +2287,11 @@ details > p {
   }
   .stack-positive-criteria {
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .stack-row {
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .shape-bullet {
     margin-top: initial;
@@ -2303,7 +2303,7 @@ details > p {
     padding: initial;
     height: fit-content;
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
     padding-block: var(--spacing-6);
     padding-inline: var(--spacing-5);
   }
@@ -2321,11 +2321,11 @@ details > p {
     margin-left: var(--spacing-5);
     margin-right: var(--spacing-5);
     max-width: 100%;
-    min-height: 0px;
-    min-width: 0px;
+    min-height: calc(0px * var(--landing-scale, 1));
+    min-width: calc(0px * var(--landing-scale, 1));
     padding-block: var(--spacing-8);
     padding-inline: var(--spacing-5);
-    width: calc(100% - 40px);
+    width: calc(100% - calc(40px * var(--landing-scale, 1)));
   }
   .text-audit-heading {
     text-wrap: initial;
@@ -2333,7 +2333,7 @@ details > p {
     height: fit-content;
     line-height: var(--leading-heading);
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .text-heading-12 {
     text-wrap: initial;
@@ -2341,7 +2341,7 @@ details > p {
     height: fit-content;
     line-height: var(--leading-body);
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .button-audit-closing {
     flex-shrink: initial;
@@ -2367,8 +2367,8 @@ details > p {
   }
   .icon-arrow-up-right-2 {
     display: initial;
-    width: 24px;
-    height: 24px;
+    width: calc(24px * var(--landing-scale, 1));
+    height: calc(24px * var(--landing-scale, 1));
     flex-shrink: 0;
   }
   .section-08-footer {
@@ -2386,14 +2386,14 @@ details > p {
     gap: var(--spacing-6);
     height: fit-content;
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .stack-footer-brand {
     flex-shrink: initial;
     align-items: center;
     height: fit-content;
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .stack-footer-links {
     justify-content: center;
@@ -2406,7 +2406,7 @@ details > p {
     flex-direction: column;
     gap: var(--spacing-4);
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .text-copy-15 {
     text-wrap: initial;
@@ -2427,7 +2427,7 @@ details > p {
   }
   .stack-platform-disclaimer {
     max-width: 100%;
-    min-width: 0px;
+    min-width: calc(0px * var(--landing-scale, 1));
   }
   .text-platform-disclaimer {
     text-wrap: initial;
@@ -2444,16 +2444,16 @@ details > p {
     overflow: initial;
     max-width: initial;
     gap: var(--spacing-6);
-    height: 808px;
+    height: calc(808px * var(--landing-scale, 1));
     padding-bottom: var(--spacing-1);
     padding-inline: var(--spacing-5);
   }
   .image-apptics-logo-3 {
-    height: 32px;
+    height: calc(32px * var(--landing-scale, 1));
   }
   .stack-hero-content2 {
-    padding-block: 12px;
-    padding-inline: 16px;
+    padding-block: calc(12px * var(--landing-scale, 1));
+    padding-inline: calc(16px * var(--landing-scale, 1));
     width: 100%;
   }
   .text-hero-audience {
@@ -2464,8 +2464,8 @@ details > p {
     max-width: 100%;
   }
   .text-hero-headline {
-    font-size: 28px;
-    line-height: 34px;
+    font-size: calc(28px * var(--landing-scale, 1));
+    line-height: calc(34px * var(--landing-scale, 1));
     text-wrap: balance;
   }
   .text-hero-description-2 {
@@ -2480,8 +2480,8 @@ details > p {
     align-self: stretch;
   }
   .image-payments-dashboard {
-    height: 307px;
-    max-width: 482px;
+    height: calc(307px * var(--landing-scale, 1));
+    max-width: calc(482px * var(--landing-scale, 1));
     object-fit: contain;
   }
   .section-02-benefits {
@@ -2509,7 +2509,7 @@ details > p {
     width: 100%;
   }
   .blue-shield-icon {
-    height: 220px;
+    height: calc(220px * var(--landing-scale, 1));
   }
   .text-approved-where-strip {
     font-size: var(--text-card-heading);
@@ -2540,8 +2540,8 @@ details > p {
     flex-basis: initial;
     flex-grow: initial;
     flex-shrink: 0;
-    height: 60px;
-    width: calc(50% - 6px);
+    height: calc(60px * var(--landing-scale, 1));
+    width: calc(50% - calc(6px * var(--landing-scale, 1)));
   }
   .text-reviews-title {
     font-size: var(--text-heading);
@@ -2549,10 +2549,10 @@ details > p {
   }
   .stack-mohammed-content1 {
     min-height: initial;
-    padding: 24px;
+    padding: calc(24px * var(--landing-scale, 1));
   }
   .video-l1vze0mt9p {
-    height: 460px;
+    height: calc(460px * var(--landing-scale, 1));
   }
   .table-processor-comparison {
     max-width: 100%;
@@ -2561,97 +2561,97 @@ details > p {
     flex-basis: initial;
     flex-grow: initial;
     flex-shrink: 0;
-    padding-block: 16px;
-    padding-inline: 10px;
-    width: 132px;
+    padding-block: calc(16px * var(--landing-scale, 1));
+    padding-inline: calc(10px * var(--landing-scale, 1));
+    width: calc(132px * var(--landing-scale, 1));
   }
   .text-features {
     display: initial;
     color: #000000;
     font-family: "Geist-SemiBold", "Geist", system-ui, sans-serif;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: calc(12px * var(--landing-scale, 1));
+    line-height: calc(18px * var(--landing-scale, 1));
   }
   .stack-provider-values {
-    max-width: 216px;
+    max-width: calc(216px * var(--landing-scale, 1));
   }
   .cell-apptics {
-    min-height: 56px;
-    min-width: 0px;
+    min-height: calc(56px * var(--landing-scale, 1));
+    min-width: calc(0px * var(--landing-scale, 1));
     padding-block: var(--spacing-3);
-    padding-inline: 2px;
-    width: round(33.3333%, 1px);
+    padding-inline: calc(2px * var(--landing-scale, 1));
+    width: round(33.3333%, calc(1px * var(--landing-scale, 1)));
   }
   .text-apptics {
     font-family: "Geist-SemiBold", "Geist", system-ui, sans-serif;
-    font-size: 13px;
-    line-height: 18px;
+    font-size: calc(13px * var(--landing-scale, 1));
+    line-height: calc(18px * var(--landing-scale, 1));
     max-width: 100%;
     text-align: center;
   }
   .cell-stripe {
-    min-height: 56px;
-    min-width: 0px;
+    min-height: calc(56px * var(--landing-scale, 1));
+    min-width: calc(0px * var(--landing-scale, 1));
     padding-block: var(--spacing-3);
-    padding-inline: 2px;
-    width: round(33.3333%, 1px);
+    padding-inline: calc(2px * var(--landing-scale, 1));
+    width: round(33.3333%, calc(1px * var(--landing-scale, 1)));
   }
   .text-stripe {
     font-family: "Geist-Regular", "Geist", system-ui, sans-serif;
-    font-size: 13px;
-    line-height: 18px;
+    font-size: calc(13px * var(--landing-scale, 1));
+    line-height: calc(18px * var(--landing-scale, 1));
     max-width: 100%;
     text-align: center;
   }
   .row-comparison-1 {
-    min-height: 72px;
+    min-height: calc(72px * var(--landing-scale, 1));
   }
   .stack-1-content1 {
     flex-basis: initial;
     flex-grow: initial;
     flex-shrink: 0;
     padding-block: var(--spacing-3);
-    padding-inline: 10px;
-    width: 132px;
+    padding-inline: calc(10px * var(--landing-scale, 1));
+    width: calc(132px * var(--landing-scale, 1));
   }
   .text-builtspecificallyf {
     font-family: "Geist-Medium", "Geist", system-ui, sans-serif;
-    font-size: 14px;
+    font-size: calc(14px * var(--landing-scale, 1));
     font-weight: 500;
-    line-height: 20px;
+    line-height: calc(20px * var(--landing-scale, 1));
     width: 100%;
   }
   .cell-apptics-2 {
-    min-height: 56px;
-    min-width: 0px;
+    min-height: calc(56px * var(--landing-scale, 1));
+    min-width: calc(0px * var(--landing-scale, 1));
     padding-block: var(--spacing-3);
-    padding-inline: 2px;
-    width: round(33.3333%, 1px);
+    padding-inline: calc(2px * var(--landing-scale, 1));
+    width: round(33.3333%, calc(1px * var(--landing-scale, 1)));
   }
   .text {
     font-family: "Geist-SemiBold", "Geist", system-ui, sans-serif;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: calc(18px * var(--landing-scale, 1));
+    line-height: calc(24px * var(--landing-scale, 1));
     max-width: 100%;
     text-align: center;
   }
   .cell-stripe-2 {
-    min-height: 56px;
-    min-width: 0px;
+    min-height: calc(56px * var(--landing-scale, 1));
+    min-width: calc(0px * var(--landing-scale, 1));
     padding-block: var(--spacing-3);
-    padding-inline: 2px;
-    width: round(33.3333%, 1px);
+    padding-inline: calc(2px * var(--landing-scale, 1));
+    width: round(33.3333%, calc(1px * var(--landing-scale, 1)));
   }
   .text-2 {
     font-family: "Geist-SemiBold", "Geist", system-ui, sans-serif;
-    font-size: 18px;
+    font-size: calc(18px * var(--landing-scale, 1));
     font-weight: 600;
-    line-height: 24px;
+    line-height: calc(24px * var(--landing-scale, 1));
     max-width: 100%;
     text-align: center;
   }
   .blue-payment-design {
-    height: 272px;
+    height: calc(272px * var(--landing-scale, 1));
   }
   .section-07-faq {
     max-width: initial;
@@ -2679,12 +2679,12 @@ details > p {
   .faq-answer {
     color: revert;
     font-family: revert;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: calc(16px * var(--landing-scale, 1));
+    line-height: calc(24px * var(--landing-scale, 1));
   }
   .section-08-footer-2 {
     max-width: initial;
-    padding-inline: 20px;
+    padding-inline: calc(20px * var(--landing-scale, 1));
   }
   .stack-footer-navigation-2 {
     align-items: start;
@@ -2728,8 +2728,8 @@ details > p {
     display: none;
   }
   .hero-headline {
-    font-size: clamp(20px, 6.153846vw, 24px);
-    line-height: clamp(26px, 7.692308vw, 30px);
+    font-size: clamp(calc(20px * var(--landing-scale, 1)), calc(6.153846vw * var(--landing-scale, 1)), calc(24px * var(--landing-scale, 1)));
+    line-height: clamp(calc(26px * var(--landing-scale, 1)), 7.692308vw, calc(30px * var(--landing-scale, 1)));
   }
   .hero-promise {
     display: inline;
@@ -2739,7 +2739,7 @@ details > p {
 
 /* Responsive artwork and intrinsic content widths. */
 .section-07-audit {
-  width: calc(100% - 64px);
+  width: calc(100% - calc(64px * var(--landing-scale, 1)));
 }
 @media (max-width: 1023px) {
   html {
@@ -2749,11 +2749,11 @@ details > p {
     display: none;
   }
   .image-crmdashboard {
-    width: 439px;
+    width: calc(439px * var(--landing-scale, 1));
     max-width: none;
   }
   .section-07-audit {
-    width: calc(100% - 40px);
+    width: calc(100% - calc(40px * var(--landing-scale, 1)));
   }
 }
 .desktop-copy {
@@ -2789,7 +2789,7 @@ details > p {
 }
 @media (max-width: 1023px) {
   .pay-page .image-payments-dashboard {
-    width: 482px;
+    width: calc(482px * var(--landing-scale, 1));
     max-width: none;
   }
   .pay-page #hero {
@@ -2801,7 +2801,7 @@ details > p {
   .pay-page #hero {
     position: relative;
     height: auto;
-    padding-bottom: 286px;
+    padding-bottom: calc(286px * var(--landing-scale, 1));
   }
   .pay-page .image-payments-dashboard {
     position: absolute;
@@ -2823,10 +2823,10 @@ details > p {
   .stack-outcome-cards > * {
     flex: 1 1 0;
     min-width: 0;
-    max-width: 400px;
+    max-width: calc(400px * var(--landing-scale, 1));
   }
   .stack-outcome-cards h3 {
-    font-size: clamp(52px, 5.555556vw, 80px);
+    font-size: clamp(calc(52px * var(--landing-scale, 1)), calc(5.555556vw * var(--landing-scale, 1)), calc(80px * var(--landing-scale, 1)));
     text-align: center;
   }
   .stack-outcome-cards p {
@@ -2853,7 +2853,7 @@ details > p {
 }
 @media (max-width: 1023px) {
   .pay-page #hero {
-    padding-bottom: 285px;
+    padding-bottom: calc(285px * var(--landing-scale, 1));
   }
   .table-processor-comparison .stack-provider-values {
     max-width: none;
@@ -2870,5 +2870,346 @@ details > p {
 @media (max-width: 1023px) {
   .text-copy-3 br {
     display: initial;
+  }
+}
+
+/* Keep the desktop hero composition in the first screen. Height-based sizing
+   responds to laptop and large-monitor viewports while preserving readable copy. */
+.hero-payments-visual {
+  display: contents;
+}
+@media (min-width: 1024px) {
+  .landing #hero {
+    --hero-gap: clamp(calc(10px * var(--landing-scale, 1)), 1.6svh, calc(18px * var(--landing-scale, 1)));
+    --hero-title-size: clamp(calc(48px * var(--landing-scale, 1)), calc(4.3vw * var(--landing-scale, 1)), calc(62px * var(--landing-scale, 1)));
+    height: 100vh;
+    height: 100svh;
+    min-height: calc(600px * var(--landing-scale, 1));
+    gap: var(--hero-gap);
+    padding: clamp(calc(16px * var(--landing-scale, 1)), 2.4svh, calc(28px * var(--landing-scale, 1))) calc(32px * var(--landing-scale, 1)) calc(24px * var(--landing-scale, 1));
+    overflow: visible;
+  }
+  .landing #hero > * {
+    flex-shrink: 0;
+  }
+  .landing #hero :is(.image-apptics-logo, .image-apptics-logo-3) {
+    width: calc(110px * var(--landing-scale, 1));
+    height: calc(28px * var(--landing-scale, 1));
+  }
+  .landing #hero :is(.badge-audience, .stack-hero-content2) {
+    padding: calc(7px * var(--landing-scale, 1)) calc(20px * var(--landing-scale, 1));
+  }
+  .landing #hero :is(.text-copy, .text-hero-audience) {
+    font-size: calc(18px * var(--landing-scale, 1));
+    line-height: calc(22px * var(--landing-scale, 1));
+  }
+  .landing #hero :is(.hero-headline, .text-hero-headline) {
+    font-size: var(--hero-title-size);
+    line-height: 1.08;
+    max-width: calc(1080px * var(--landing-scale, 1));
+  }
+  .landing #hero :is(.text-hero-description, .text-hero-description-2) {
+    font-size: calc(22px * var(--landing-scale, 1));
+    line-height: 1.35;
+    max-width: calc(780px * var(--landing-scale, 1));
+  }
+  .landing #hero :is(.button-audit-primary, .stack-hero-content5) {
+    height: calc(52px * var(--landing-scale, 1));
+    padding: calc(12px * var(--landing-scale, 1)) calc(28px * var(--landing-scale, 1));
+  }
+  .landing #hero :is(.text-button-label, .text-book-acall) {
+    font-size: calc(18px * var(--landing-scale, 1));
+    line-height: calc(26px * var(--landing-scale, 1));
+  }
+  .crm-page #hero .stack-hero-visual,
+  .hero-payments-visual {
+    display: flex;
+    flex: 1 1 0;
+    min-height: 0;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .pay-page #hero .image-payments-dashboard {
+    flex-shrink: 1;
+    min-height: 0;
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  /* Artwork keeps its desktop scale; the visual frame crops its lower edge. */
+  .crm-page #hero .stack-hero-visual {
+    overflow: clip;
+  }
+  .crm-page #hero .image-crmdashboard {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50% 0;
+    width: 100%;
+    max-width: calc(1296px * var(--landing-scale, 1));
+    height: auto;
+    flex-shrink: 0;
+  }
+  .crm-page #hero .stack-outcome-cards {
+    height: clamp(calc(124px * var(--landing-scale, 1)), 17svh, calc(164px * var(--landing-scale, 1)));
+    width: min(100%, calc(1120px * var(--landing-scale, 1)));
+    left: 50%;
+    right: auto;
+    translate: -50%;
+    padding: calc(12px * var(--landing-scale, 1)) 0 0;
+    gap: calc(16px * var(--landing-scale, 1));
+    align-items: end;
+  }
+  .crm-page #hero .card-outcome-mrr {
+    height: clamp(calc(120px * var(--landing-scale, 1)), 15svh, calc(148px * var(--landing-scale, 1)));
+    padding: calc(16px * var(--landing-scale, 1));
+    gap: calc(8px * var(--landing-scale, 1));
+    border-radius: calc(22px * var(--landing-scale, 1));
+  }
+  .crm-page #hero .stack-outcome-cards h3 {
+    font-size: clamp(calc(34px * var(--landing-scale, 1)), calc(5.1svh * var(--landing-scale, 1)), calc(54px * var(--landing-scale, 1)));
+    line-height: 1.1;
+  }
+  .crm-page #hero .stack-outcome-cards p {
+    font-size: clamp(calc(14px * var(--landing-scale, 1)), calc(1.8svh * var(--landing-scale, 1)), calc(18px * var(--landing-scale, 1)));
+    line-height: 1.3;
+    font-weight: 500;
+  }
+  .pay-page #hero .image-payments-dashboard {
+    max-width: calc(1003px * var(--landing-scale, 1));
+    border-radius: calc(18px * var(--landing-scale, 1));
+  }
+}
+
+/* Qualification cards follow the shortened criteria instead of a fixed height. */
+@media (min-width: 1024px) {
+  .stack-qualification-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: calc(1040px * var(--landing-scale, 1));
+    align-items: stretch;
+  }
+  .card-qualification-positive,
+  .card-qualification-negative {
+    height: auto;
+    padding: calc(32px * var(--landing-scale, 1));
+  }
+  /* Preserve the Paper dashboard reveal at the desktop hero boundary. */
+  .pay-page #hero {
+    height: auto;
+    min-height: 0;
+    overflow: clip;
+    padding-bottom: 0;
+  }
+  .pay-page #hero .hero-payments-visual {
+    position: relative;
+    flex: none;
+    height: clamp(calc(160px * var(--landing-scale, 1)), 42svh, calc(462px * var(--landing-scale, 1)));
+    overflow: clip;
+  }
+  .pay-page #hero .image-payments-dashboard {
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    left: 50%;
+    translate: -50% 0;
+    width: 100%;
+    height: auto;
+    max-width: calc(1200px * var(--landing-scale, 1));
+    max-height: none;
+  }
+}
+
+/* Compact only short desktop windows; normal desktop typography follows width. */
+@media (min-width: 1024px) and (max-height: 750px) {
+  .landing #hero {
+    --hero-title-size: clamp(calc(36px * var(--landing-scale, 1)), calc(6.5svh * var(--landing-scale, 1)), calc(48px * var(--landing-scale, 1)));
+  }
+  .landing #hero :is(.text-copy, .text-hero-audience) {
+    font-size: calc(16px * var(--landing-scale, 1));
+  }
+  .landing #hero :is(.text-hero-description, .text-hero-description-2) {
+    font-size: clamp(calc(16px * var(--landing-scale, 1)), calc(2.8svh * var(--landing-scale, 1)), calc(20px * var(--landing-scale, 1)));
+  }
+}
+
+/* Compact desktop proportions requested in review. Mobile retains its own scale. */
+@media (min-width: 1024px) {
+  body.landing {
+    --landing-scale: 0.8;
+  }
+  .landing main > :is(section, footer) {
+    max-width: 1100px;
+    margin-inline: auto;
+  }
+  .crm-page #hero {
+    max-height: 960px;
+  }
+  .landing :is(.button-audit-primary, .stack-hero-content5) {
+    min-height: 44px;
+  }
+}
+
+/* Explicit desktop review adjustments are final rendered values, independent
+   of the shared compact scale. Mobile keeps the reviewed Paper typography. */
+@media (min-width: 1024px) {
+  .crm-page #checkout .text-copy-3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .crm-page #operators .text-copy-11 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .crm-page #qualification :is(.card-qualification-positive, .card-qualification-negative) {
+    row-gap: 30px;
+  }
+  .crm-page #qualification .stack-positive-criteria {
+    row-gap: 22px;
+  }
+  .landing #hero {
+    row-gap: 27.4px;
+  }
+  /* Clip the artwork at the bottom, allowing its top and side glow to fade. */
+  .pay-page #hero {
+    overflow: visible;
+    max-height: 100svh;
+  }
+  .pay-page #hero .hero-payments-visual {
+    flex: 0 1 auto;
+    overflow: visible;
+    clip-path: inset(-100px -100px 0);
+  }
+  .pay-page :is(#benefits, #reviews, #infrastructure) {
+    padding-inline: 0;
+  }
+  .pay-page :is(#benefits, #reviews, #infrastructure) .stack-benefit-cards {
+    max-width: none;
+  }
+}
+@media (min-width: 1024px) and (max-height: 750px) {
+  .landing #hero {
+    row-gap: clamp(14px, 3svh, 22px);
+  }
+}
+
+/* Shared mobile typography from the main and payments review annotations. */
+@media (max-width: 1023px) {
+  .crm-page main h2 {
+    font-size: var(--text-heading);
+    line-height: var(--leading-heading);
+  }
+  .crm-page #hero {
+    min-height: 100svh;
+    height: auto;
+    row-gap: var(--spacing-6);
+    padding-top: var(--spacing-7);
+    padding-bottom: 0;
+  }
+  .crm-page #hero .hero-headline {
+    font-size: var(--text-mobile-hero);
+    line-height: var(--leading-mobile-hero);
+  }
+  .crm-page #hero .stack-outcome-cards {
+    bottom: 0;
+  }
+  .crm-page #hero .stack-hero-visual {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: calc(100% + 40px);
+    height: auto;
+    min-height: 216px;
+    flex: 1 0 216px;
+    overflow: clip;
+  }
+  .crm-page #hero .image-crmdashboard {
+    top: 0;
+    bottom: auto;
+  }
+  .crm-page .stack-checkout-copy {
+    row-gap: 20px;
+  }
+  .crm-page .checkout-card-title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .crm-page :is(.text-copy-3, .text-copy-5, .text-copy-6, .crm-card-description, .text-copy-8, .text-copy-9, .text-copy-10, .text-copy-12, .text-copy-13) {
+    font-size: var(--text-body);
+    line-height: var(--leading-body);
+  }
+  .crm-page :is(.text-copy-4, .text-label, .text-label-2) {
+    font-size: var(--text-body);
+    line-height: 20px;
+  }
+  .crm-page :is(.subscription-card-title, .text-analytics-heading, .text-vaulting-heading, .implementation-card-title, .text-heading-10, .text-heading-11) {
+    font-size: var(--text-card-heading);
+    line-height: var(--leading-card-heading);
+  }
+  .crm-page :is(.stack-subscription-copy, .stack-vaulting-heading, .card-revenue-protection, .stack-step01-heading) {
+    row-gap: var(--spacing-3);
+  }
+  .crm-page .stack-step01-details {
+    row-gap: var(--spacing-4);
+  }
+  .crm-page .text-copy-11 {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .crm-page :is(.stack-operator-story, .stack-operator-images) {
+    row-gap: var(--spacing-3);
+  }
+  .crm-page :is(.card-qualification-positive, .card-qualification-negative) {
+    row-gap: var(--spacing-4);
+  }
+}
+
+/* Payments uses the same mobile hierarchy and card rhythm as the main page. */
+@media (max-width: 1023px) {
+  .pay-page #hero {
+    row-gap: var(--spacing-6);
+    padding-top: var(--spacing-7);
+  }
+  .pay-page #hero .text-hero-headline {
+    font-size: var(--text-mobile-hero);
+    line-height: var(--leading-mobile-hero);
+  }
+  .pay-page main h2 {
+    font-size: var(--text-heading);
+    line-height: var(--leading-heading);
+  }
+  .pay-page .text-approved-where-strip {
+    font-size: var(--text-card-heading);
+    line-height: var(--leading-card-heading);
+  }
+  .pay-page :is(.text-hero-description-2, .text-benefits-intro, .text-benefit-body-approved, .text-tools-caption, .text-mohammed-z, .text-8figure-brand-owner, .faq-answer, .text-whattypesofbusine) {
+    font-size: var(--text-body);
+    line-height: var(--leading-body);
+  }
+  .pay-page :is(.stack-benefit-copy-approved, .stack-mohammed-content1) {
+    row-gap: var(--spacing-3);
+    padding: 24px 20px;
+  }
+  .pay-page .stack-faqaccordion-content1 {
+    row-gap: var(--spacing-4);
+  }
+}
+
+@media (max-width: 1023px) {
+  /* Center the bullet against the first line, including wrapped criteria. */
+  .crm-page #qualification :is(.shape-bullet, .shape-bullet-2) {
+    margin-top: calc((var(--leading-body) - 6px) / 2);
+  }
+  .crm-page #audit .text-audit-heading {
+    text-wrap: balance;
+    font-size: clamp(24px, 7.179487vw, 28px);
+    line-height: 1.14;
+  }
+  .crm-page #audit .text-audit-heading br {
+    display: none;
   }
 }

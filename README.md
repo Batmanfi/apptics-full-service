@@ -1,6 +1,6 @@
 # Apptics landing pages
 
-Static HTML and responsive CSS, with a lazy-loaded React bundle for the existing seven-step qualification form. The finalized Paper designs are authoritative:
+Static HTML and responsive CSS, with a lazy-loaded React bundle for the existing seven-step qualification form. The finalized Paper designs provide the baseline; the approved October 10 browser review refines typography, widths, spacing, hero crops and qualification copy:
 
 - `/`: [CRM Landing Page — Phoenix Reference](https://app.paper.design/file/01M0Z60996QY1ASVAG1HFDXGKT/p-G-0), desktop and mobile.
 - `/payments/`: [Page.Payments.Desktop and Page.Payments.Mobile](https://app.paper.design/file/01M0Z60996QY1ASVAG1HFDXGKT/p-J-0). The scratch Mask group and archived payments exports are excluded.
@@ -14,7 +14,7 @@ npm run check
 python3 -m http.server 4173 --directory dist
 ```
 
-Open http://localhost:4173. The build recreates `dist/`, including the form and analytics bundles, local assets and all four routes. Vercel serves `dist/`; pushes to `main` trigger the connected production deployment.
+Open http://localhost:4173. The build recreates `dist/`, including the form and analytics bundles, local assets and all four routes. The build minifies the landing styles using the existing esbuild dependency. Shared mobile typography lives in `assets/landing/tokens.css`; desktop sections are capped at 1100px with the reviewed compact scale. Vercel serves `dist/`; pushes to `main` trigger the connected production deployment.
 
 ## Structure
 
