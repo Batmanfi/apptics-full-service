@@ -1,47 +1,30 @@
-# Apptics — Full-Service Revenue Retention
+# Apptics landing pages
 
-Static landing page matching the Framer source of truth at `https://fun-product-779362.framer.app/`. Plain HTML and CSS, with a compiled React bundle only for the qualification form.
+Static HTML and responsive CSS, with a lazy-loaded React bundle for the existing seven-step qualification form. The finalized Paper designs are authoritative:
 
-## Local preview
+- `/`: [CRM Landing Page — Phoenix Reference](https://app.paper.design/file/01M0Z60996QY1ASVAG1HFDXGKT/p-G-0), desktop and mobile.
+- `/payments/`: [Page.Payments.Desktop and Page.Payments.Mobile](https://app.paper.design/file/01M0Z60996QY1ASVAG1HFDXGKT/p-J-0). The scratch Mask group and archived payments exports are excluded.
 
-```sh
-python3 -m http.server 4173
-```
-
-Open http://localhost:4173.
-
-To install dependencies and create the production-ready static build:
+## Build and preview
 
 ```sh
 npm ci
 npm run build
+npm run check
+python3 -m http.server 4173 --directory dist
 ```
 
-The build recreates `dist/`, including the compiled form bundle and every static route required by Vercel.
+Open http://localhost:4173. The build recreates `dist/`, including the form and analytics bundles, local assets and all four routes. Vercel serves `dist/`; pushes to `main` trigger the connected production deployment.
 
-## Files
+## Structure
 
-- `index.html`: landing page
-- `dq/index.html` and `confirmation/index.html`: auxiliary routes
-- `design.css` / `styles.css`: tokens, layout, and Framer breakpoints
-- `script.js`: testimonial player and form overlay (open/close, focus, history)
-- `src/AppticsForm.tsx`: canonical seven-step form
-- `src/form-entry.tsx`: lazy React mount adapter with deployment-relative routing
-- `assets/`: logos, icons, photos, video, Geist fonts, compiled form bundle
+- `index.html` and `payments/index.html`: semantic page markup, one responsive DOM per route.
+- `landing.css`: shared components and desktop/mobile layout rules.
+- `assets/landing/tokens.css`: current Paper tokens; `assets/landing/`: original production images and illustrations.
+- `script.js`: qualification modal, keyboard/focus/history behavior and click-to-play Wistia players.
+- `src/AppticsForm.tsx`: existing qualification, submission, attribution and booking integrations.
+- `src/form-entry.tsx`: lazy form mount and root-relative disqualification route.
+- `dq/` and `confirmation/`: existing auxiliary routes, retaining their original styles.
+- `verification/`: desktop/mobile screenshots, responsive measurements and verification notes.
 
-Audit CTAs open the in-page qualification form. They do not link to `apptics.ai/demo`. FAQ 1 is open on load. Footer is the simplified Framer set (logo, social, Help, legal, Meta disclaimer).
-
-## Deployment
-
-GitHub remains the source repository. Vercel builds and serves the generated `dist/` directory using `vercel.json`. Once the repository is connected to Vercel, pushes to `main` create production deployments automatically.
-
-```sh
-npm ci
-npm run build
-```
-
-The `/dq/` and `/confirmation/` directory indexes work on the Vercel production domain and preview deployments.
-
-## Design
-
-Framer is authoritative for copy, styling, and form behavior. Known source strings such as `youll` and `his site` are preserved.
+All conversion CTAs open the existing form. Qualified submissions go to the existing Cal.com audit booking page; disqualified visitors go to `/dq/`. Meta Pixel, Clarity and Vercel Analytics remain in place. Payments FAQs use native keyboard-accessible details/summary accordions; the first is open initially.

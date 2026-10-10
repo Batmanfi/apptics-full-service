@@ -7,6 +7,7 @@ const deployFiles = [
   "styles.css",
   "design.css",
   "script.js",
+  "landing.css",
   "assets",
   "dq",
   "confirmation",

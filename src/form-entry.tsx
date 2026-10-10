@@ -14,7 +14,7 @@ window.mountAppticsForm = () => {
   const host = document.getElementById("apptics-form-root");
   if (!host || formRoot) return;
 
-  const disqualifiedUrl = new URL("dq/", document.baseURI).toString();
+  const disqualifiedUrl = new URL("/dq/", document.baseURI).toString();
   formRoot = createRoot(host);
   formRoot.render(<AppticsForm disqualifiedUrl={disqualifiedUrl} />);
 };

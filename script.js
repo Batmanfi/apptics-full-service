@@ -29,6 +29,8 @@ const modal = document.querySelector("#apptics-form-modal");
 const page = document.querySelector("#main");
 const openers = document.querySelectorAll("[data-open-form]");
 const FORM_STATE = "apptics-form";
+let lastFormOpener = null;
+let restoreFocusAfterPop = false;
 
 function focusableIn(root) {
   return [
@@ -67,19 +69,28 @@ function closeForm(fromPop) {
     },
     window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 120,
   );
-  const lastOpener = document.querySelector("[data-open-form]");
+  const lastOpener = lastFormOpener;
   if (lastOpener) lastOpener.focus();
   if (!fromPop && history.state && history.state[FORM_STATE]) {
+    restoreFocusAfterPop = true;
     history.back();
   }
 }
 
 if (modal && openers.length) {
   openers.forEach((button) => {
-    button.addEventListener("click", () => openForm(true));
+    button.addEventListener("click", () => {
+      lastFormOpener = button;
+      openForm(true);
+    });
   });
 
   modal.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      event.preventDefault();
+      closeForm(false);
+      return;
+    }
     if (event.key !== "Tab") return;
     const nodes = focusableIn(modal);
     if (!nodes.length) {
@@ -100,5 +111,30 @@ if (modal && openers.length) {
 
   window.addEventListener("popstate", () => {
     if (modal.classList.contains("is-open")) closeForm(true);
+    if (restoreFocusAfterPop) {
+      restoreFocusAfterPop = false;
+      requestAnimationFrame(() => lastFormOpener?.focus());
+    }
   });
+  modal
+    .querySelector("[data-close-form]")
+    ?.addEventListener("click", () => closeForm(false));
 }
+
+// Keep the Paper preview crops until playback is requested, then load the real player.
+document.querySelectorAll("[data-wistia]").forEach((button) => {
+  button.addEventListener(
+    "click",
+    () => {
+      const player = document.createElement("iframe");
+      player.src = `https://fast.wistia.net/embed/iframe/${button.dataset.wistia}?autoPlay=true&videoFoam=true`;
+      player.title = button.getAttribute("aria-label");
+      player.allow = "autoplay; fullscreen; picture-in-picture";
+      player.allowFullscreen = true;
+      button.parentElement.append(player);
+      button.hidden = true;
+      player.focus();
+    },
+    { once: true },
+  );
+});

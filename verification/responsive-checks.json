@@ -1,0 +1,200 @@
+[
+  {
+    "brokenLoadedImages": [],
+    "comparisonColumns": 0,
+    "documentWidth": 320,
+    "heroHeight": 642,
+    "mobileCtaWidths": [
+      280,
+      280,
+      280,
+      280,
+      240
+    ],
+    "overflow": [],
+    "route": "/",
+    "width": 320
+  },
+  {
+    "brokenLoadedImages": [],
+    "comparisonColumns": 0,
+    "documentWidth": 375,
+    "heroHeight": 653.375,
+    "mobileCtaWidths": [
+      335,
+      335,
+      335,
+      335,
+      295
+    ],
+    "overflow": [],
+    "route": "/",
+    "width": 375
+  },
+  {
+    "brokenLoadedImages": [],
+    "comparisonColumns": 0,
+    "documentWidth": 390,
+    "heroHeight": 636,
+    "mobileCtaWidths": [
+      350,
+      350,
+      350,
+      350,
+      310
+    ],
+    "overflow": [],
+    "route": "/",
+    "width": 390
+  },
+  {
+    "brokenLoadedImages": [],
+    "comparisonColumns": 0,
+    "documentWidth": 768,
+    "heroHeight": 592,
+    "mobileCtaWidths": [
+      728,
+      728,
+      728,
+      728,
+      688
+    ],
+    "overflow": [],
+    "route": "/",
+    "width": 768
+  },
+  {
+    "brokenLoadedImages": [],
+    "comparisonColumns": 0,
+    "documentWidth": 1009,
+    "heroHeight": 1351,
+    "mobileCtaWidths": [
+      382,
+      382,
+      382,
+      382,
+      256
+    ],
+    "overflow": [],
+    "route": "/",
+    "width": 1024
+  },
+  {
+    "brokenLoadedImages": [],
+    "comparisonColumns": 0,
+    "documentWidth": 1440,
+    "heroHeight": 1351,
+    "mobileCtaWidths": [
+      382,
+      382,
+      382,
+      382,
+      256
+    ],
+    "overflow": [],
+    "route": "/",
+    "width": 1440
+  },
+  {
+    "brokenLoadedImages": [],
+    "comparisonColumns": 4,
+    "documentWidth": 320,
+    "faqHeight": 1559,
+    "heroHeight": 898,
+    "mobileCtaWidths": [
+      280,
+      280,
+      280,
+      280,
+      280
+    ],
+    "overflow": [],
+    "route": "/payments/",
+    "width": 320
+  },
+  {
+    "brokenLoadedImages": [],
+    "comparisonColumns": 4,
+    "documentWidth": 375,
+    "faqHeight": 1391,
+    "heroHeight": 836,
+    "mobileCtaWidths": [
+      335,
+      335,
+      335,
+      335,
+      335
+    ],
+    "overflow": [],
+    "route": "/payments/",
+    "width": 375
+  },
+  {
+    "brokenLoadedImages": [],
+    "comparisonColumns": 4,
+    "documentWidth": 390,
+    "faqHeight": 1335,
+    "heroHeight": 808,
+    "mobileCtaWidths": [
+      350,
+      350,
+      350,
+      350,
+      350
+    ],
+    "overflow": [],
+    "route": "/payments/",
+    "width": 390
+  },
+  {
+    "brokenLoadedImages": [],
+    "comparisonColumns": 4,
+    "documentWidth": 768,
+    "faqHeight": 999,
+    "heroHeight": 718,
+    "mobileCtaWidths": [
+      728,
+      728,
+      728,
+      728,
+      728
+    ],
+    "overflow": [],
+    "route": "/payments/",
+    "width": 768
+  },
+  {
+    "brokenLoadedImages": [],
+    "comparisonColumns": 4,
+    "documentWidth": 1009,
+    "faqHeight": 1171,
+    "heroHeight": 1002,
+    "mobileCtaWidths": [
+      180,
+      182,
+      179,
+      180,
+      182
+    ],
+    "overflow": [],
+    "route": "/payments/",
+    "width": 1024
+  },
+  {
+    "brokenLoadedImages": [],
+    "comparisonColumns": 4,
+    "documentWidth": 1425,
+    "faqHeight": 947,
+    "heroHeight": 1002,
+    "mobileCtaWidths": [
+      180,
+      182,
+      179,
+      180,
+      182
+    ],
+    "overflow": [],
+    "route": "/payments/",
+    "width": 1440
+  }
+]

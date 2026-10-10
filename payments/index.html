@@ -9,228 +9,837 @@
       content="Apptics helps qualified ecommerce brands replace unstable payment processing with merchant accounts built for long-term growth."
     />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="icon" href="../assets/favicon.svg?v=20260908" type="image/svg+xml" />
+    <link
+      rel="icon"
+      href="/assets/favicon.svg?v=20260908"
+      type="image/svg+xml"
+    />
     <link
       rel="preload"
-      href="../assets/geist.woff2"
+      href="/assets/geist.woff2"
       as="font"
       type="font/woff2"
       crossorigin
     />
-    <link rel="stylesheet" href="../styles.css?v=20260915-brand" />
-    <link rel="stylesheet" href="/payments/payments.css?v=20260915-brand" />
+
     <!-- Meta Pixel Code -->
     <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '1492938548437853');
-      fbq('track', 'PageView');
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "1492938548437853");
+      fbq("track", "PageView");
     </script>
     <!-- End Meta Pixel Code -->
     <!-- Microsoft Clarity -->
     <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
       })(window, document, "clarity", "script", "yezuuwpz05");
     </script>
     <!-- End Microsoft Clarity -->
-    <script src="../assets/analytics.bundle.js" defer></script>
-    <script src="../script.js" defer></script>
+    <script src="/assets/analytics.bundle.js" defer></script>
+    <script src="/script.js" defer></script>
+
+    <link rel="stylesheet" href="/assets/landing/tokens.css" />
+    <link rel="stylesheet" href="/landing.css" />
   </head>
-  <body>
-    <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1492938548437853&ev=PageView&noscript=1"
-      alt=""
+  <body class="landing pay-page">
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1492938548437853&amp;ev=PageView&amp;noscript=1"
+        alt=""
     /></noscript>
     <a class="skip-link" href="#main">Skip to content</a>
-    <main id="main" class="page payments-page s0">
-      <section class="payments-hero" aria-labelledby="payments-title">
-        <div class="payments-container payments-hero__inner">
-          <a class="payments-brand" href="/" aria-label="Apptics home">
-            <img src="../assets/apptics-logo-primary.png" alt="Apptics" width="1684" height="384" />
-          </a>
-          <p class="payments-eyebrow">For Ecom Brands Doing $50k+/Month</p>
-          <h1 id="payments-title">
-            Get Approved For High-Risk eCom Payment Processing in 72 hours
+    <main id="main" class="page-payments-desktop">
+      <section id="hero" class="section-01-hero-2">
+        <img
+          src="/assets/landing/apptics-logo-6HF8VH0HCY5FJFJRKZ32PTD4ZC.svg"
+          alt="Apptics"
+          loading="eager"
+          decoding="async"
+          class="image-apptics-logo-3"
+        />
+        <div class="stack-hero-content2">
+          <p class="text-hero-audience">For Ecom Brands Doing $50k+/Month</p>
+        </div>
+        <div class="stack-hero-title">
+          <h1 class="text-hero-headline">
+            Get Approved For Private eCom Payment Processing in 72 hours
           </h1>
-          <p class="payments-hero__copy">
-            Switch from a single payment processor that can ban you any time and freeze your funds to our multi-route private payment processing that connects you with 35+ banking partners.
-            <br /><br />
-            When one processor's risk model shifts, your account keeps processing through another rail.
-          </p>
-          <div class="payments-actions">
-            <button type="button" class="payments-button payments-button--primary" data-open-form aria-haspopup="dialog" aria-controls="apptics-form-modal">
-              Book a Call <span aria-hidden="true">→</span>
-            </button>
+        </div>
+        <p class="text-hero-description-2">
+          Switch from a single payment processor that can ban you any time and
+          freeze your funds to our multi-route private payment processing that
+          connects you with 40+ banking partners.
+        </p>
+        <button
+          type="button"
+          data-open-form=""
+          aria-haspopup="dialog"
+          aria-controls="apptics-form-modal"
+          class="stack-hero-content5"
+        >
+          <span class="text-book-acall">Book A Call →</span></button
+        ><img
+          src="/assets/landing/payments-dashboard-01M4K5EWK3J7TQT9Q8Y84GT18Y.png"
+          alt="PaymentsDashboard"
+          loading="eager"
+          decoding="async"
+          class="image-payments-dashboard"
+        />
+      </section>
+      <section id="benefits" class="section-02-benefits">
+        <h2 class="text-benefits-title">
+          Payments That Stay On.<br />Cashflow You Can Forecast.
+        </h2>
+        <p class="text-benefits-intro">
+          Every day your processor could freeze your business is a day you
+          can&#x27;t scale. Apptics exists to remove that variable - so you stop
+          running ops from defense and start scaling from offense. Predictable
+          payouts. Approval that sticks. Support you can actually reach.
+        </p>
+        <div class="stack-benefit-cards">
+          <div class="card-benefit-approval">
+            <img
+              src="/assets/landing/blue-shield-icon-3T042BQ3H5K2FY5TCCMDB2TG17.png"
+              alt="Blue shield icon"
+              loading="lazy"
+              decoding="async"
+              class="blue-shield-icon"
+            />
+            <div class="stack-benefit-copy-approved">
+              <h3 class="text-approved-where-strip">
+                Approved Where Stripe Said No
+              </h3>
+              <p class="text-benefit-body-approved">
+                Dedicated merchant accounts for the verticals generalist
+                processors avoid: CBD, supplements, vape, nutra, adult, weight
+                loss, subscription boxes. Every file reviewed by a human
+                who&#x27;s seen your vertical scale - not an algorithm flagging
+                your application as an anomaly.
+              </p>
+            </div>
           </div>
+          <div class="card-benefit-approval">
+            <img
+              src="/assets/landing/app-icon-infinity-43PTEK0SRT46JDPKMN10ZH469W.png"
+              alt="App icon infinity"
+              loading="lazy"
+              decoding="async"
+              class="blue-shield-icon"
+            />
+            <div class="stack-benefit-copy-approved">
+              <h3 class="text-approved-where-strip">
+                Multi-Rail Routing That Stays On
+              </h3>
+              <p class="text-benefit-body-approved">
+                Transactions route intelligently across 40+ banking
+                relationships. When one processor&#x27;s risk model shifts, your
+                account keeps processing through another rail. This is
+                structurally impossible on a single-acquirer processor — which
+                is why Stripe and Shopify Payments can&#x27;t offer it.
+              </p>
+            </div>
+          </div>
+          <div class="card-benefit-approval">
+            <img
+              src="/assets/landing/apple-pay-logos-10F737E10DX8XHHCCY5YEEBGGK.png"
+              alt="Apple Pay logos"
+              loading="lazy"
+              decoding="async"
+              class="blue-shield-icon"
+            />
+            <div class="stack-benefit-copy-approved">
+              <h3 class="text-approved-where-strip">
+                Operator-Grade Support, 24/7
+              </h3>
+              <p class="text-benefit-body-approved">
+                Direct line to a named account manager. When your checkout
+                breaks at 11pm during a Black Friday push, a human answers. No
+                email tickets. No chatbot loops. No &quot;response within 72
+                business hours.&quot; Built the way support should work when
+                your business depends on it.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          type="button"
+          data-open-form=""
+          aria-haspopup="dialog"
+          aria-controls="apptics-form-modal"
+          class="button-get-started"
+        >
+          <span class="text-book-acall">Get Started →</span>
+        </button>
+      </section>
+      <section id="integrations" class="section-03-integrations">
+        <h2 class="text-tools-caption">
+          Works Seamlessly With the Tools You Already Use
+        </h2>
+        <div class="stack-integration-logos">
           <img
-            class="payments-hero__image"
-            src="../assets/payments/hero-phone.png"
-            alt="Shopify notification showing that payments have been paused"
-            width="1440"
-            height="800"
+            src="/assets/landing/app-logo1-2B1G6XDXRR761E6S05SV7S1M8T.svg"
+            alt="AppLogo1"
             loading="eager"
             decoding="async"
+            class="image-app-logo1"
+          /><img
+            src="/assets/landing/app-logo2-7KX06MMXWCW7F7QC3NYAZN9AD6.svg"
+            alt="AppLogo2"
+            loading="eager"
+            decoding="async"
+            class="image-app-logo1"
+          /><img
+            src="/assets/landing/app-logo3-2H0RSRHH9TGYY7J3GVT26G43T4.svg"
+            alt="AppLogo3"
+            loading="eager"
+            decoding="async"
+            class="image-app-logo1"
+          /><img
+            src="/assets/landing/app-logo4-2NHKKJX0A8PCXAV13ZCTCT1AZJ.svg"
+            alt="AppLogo4"
+            loading="eager"
+            decoding="async"
+            class="image-app-logo1"
+          /><img
+            src="/assets/landing/app-logo5-1084V1YN5NNBSNG6FEYW6CV0NB.svg"
+            alt="AppLogo5"
+            loading="eager"
+            decoding="async"
+            class="image-app-logo1"
+          /><img
+            src="/assets/landing/app-logo6-0919HYSB8YPXR53CPBPHTPC7RR.svg"
+            alt="AppLogo6"
+            loading="eager"
+            decoding="async"
+            class="image-app-logo1"
+          /><img
+            src="/assets/landing/app-logo7-7F1TJK94W2N74FFXKD7KXWMWBG.svg"
+            alt="AppLogo7"
+            loading="eager"
+            decoding="async"
+            class="image-app-logo1"
+          /><img
+            src="/assets/landing/app-logo8-48QXX8KN4B2RAN0SV2J4EB6ZPX.svg"
+            alt="AppLogo8"
+            loading="eager"
+            decoding="async"
+            class="image-app-logo1"
           />
         </div>
       </section>
-
-      <section class="payments-process" aria-label="How it works">
-        <div class="payments-container payments-process__grid">
-          <article class="payments-step">
-            <span class="payments-step__number">1</span>
-            <h2>We Review Your Business</h2>
-            <p>We look at your business upfront and match you with the right merchant account.</p>
-          </article>
-          <article class="payments-step">
-            <span class="payments-step__number">2</span>
-            <h2>Get Approved &amp; Connected</h2>
-            <p>Qualified merchants can get approved fast and connect through Shopify, WooCommerce, or a custom checkout.</p>
-          </article>
-          <article class="payments-step">
-            <span class="payments-step__number">3</span>
-            <h2>Start Processing Again</h2>
-            <p>Go live with payment infrastructure designed to keep your revenue moving.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="payments-partners" aria-labelledby="partners-title">
-        <div class="payments-container">
-          <p id="partners-title">Our partners</p>
-          <div class="payments-partners__logos">
-            <img src="../assets/payments/partner-2.svg" alt="Wells Fargo" loading="lazy" />
-            <img src="../assets/payments/partner-1.svg" alt="PayArc" loading="lazy" />
-            <img src="../assets/payments/partner-3.svg" alt="Maverick" loading="lazy" />
-            <img src="../assets/payments/partner-4.svg" alt="Nuvei" loading="lazy" />
-            <img src="../assets/payments/partner-5.svg" alt="Kount" loading="lazy" />
+      <section id="reviews" class="section-02-benefits">
+        <h2 class="text-reviews-title">Why eCom Operators Trust Apptics</h2>
+        <div class="stack-benefit-cards">
+          <div class="card-benefit-approval">
+            <div class="stack-mohammed-content1">
+              <p class="text-approved-where-strip">
+                &quot;The Apptics checkout boosted our revenue beyond
+                expectations.&quot;
+              </p>
+              <div class="stack-testimonial-attribution">
+                <p class="text-mohammed-z">Mohammed Z.</p>
+                <p class="text-8figure-brand-owner">8 Figure Brand Owner</p>
+              </div>
+            </div>
+            <div
+              class="video-l1vze0mt9p testimonial-video"
+              style="
+                background-image: url(/assets/landing/video-l1vze0mt9p-4417F77T7DM9KJRCB63DR9ATQF.jpg);
+              "
+            >
+              <button
+                class="video-launch"
+                type="button"
+                data-wistia="l1vze0mt9p"
+                aria-label="Play Mohammed testimonial"
+              >
+                <span aria-hidden="true">▶</span>
+              </button>
+            </div>
+          </div>
+          <div class="card-benefit-approval">
+            <div class="stack-mohammed-content1">
+              <p class="text-approved-where-strip">
+                &quot;We’re making way more money thanks to the Apptics
+                team&quot;
+              </p>
+              <div class="stack-testimonial-attribution">
+                <p class="text-mohammed-z">Saamir M.</p>
+                <p class="text-8figure-brand-owner">8 Figure Brand Owner</p>
+              </div>
+            </div>
+            <div
+              class="video-l1vze0mt9p testimonial-video"
+              style="
+                background-image: url(/assets/landing/video-7u4p5xwk9m-3172ZWCBB4XES1JM3Q7VJHS8YA.jpg);
+              "
+            >
+              <button
+                class="video-launch"
+                type="button"
+                data-wistia="7u4p5xwk9m"
+                aria-label="Play Saamir testimonial"
+              >
+                <span aria-hidden="true">▶</span>
+              </button>
+            </div>
+          </div>
+          <div class="card-benefit-approval">
+            <div class="stack-mohammed-content1">
+              <p class="text-approved-where-strip">
+                &quot;Apptics keeps everything streamlined, optimized, and
+                results-driven.&quot;
+              </p>
+              <div class="stack-testimonial-attribution">
+                <p class="text-mohammed-z">Lauren S.</p>
+                <p class="text-8figure-brand-owner">7 Figure Brand Owner</p>
+              </div>
+            </div>
+            <div
+              class="video-l1vze0mt9p testimonial-video"
+              style="
+                background-image: url(/assets/landing/video-3rn9dtcael-3QXS6PRTT225R0ZHH5GK1HN298.jpg);
+              "
+            >
+              <button
+                class="video-launch"
+                type="button"
+                data-wistia="3rn9dtcael"
+                aria-label="Play Lauren testimonial"
+              >
+                <span aria-hidden="true">▶</span>
+              </button>
+            </div>
           </div>
         </div>
+        <button
+          type="button"
+          data-open-form=""
+          aria-haspopup="dialog"
+          aria-controls="apptics-form-modal"
+          class="button-get-started"
+        >
+          <span class="text-book-acall">Learn More →</span>
+        </button>
       </section>
-
-      <section class="payments-compare" aria-labelledby="compare-title">
-        <div class="payments-container">
-          <div class="payments-section-heading">
-            <h2 id="compare-title">Why choose us over others?</h2>
-            <p>
-              Stripe, Shopify Payments, and PayPal work great until your business no longer
-              fits the box. Apptics gives you flexible processing, real underwriting,
-              chargeback protection, and hands-on support.
+      <section id="comparison" class="section-02-benefits">
+        <h2 class="text-reviews-title">What Makes Us Different</h2>
+        <p class="text-tools-caption">
+          Stripe and generalist &quot;high-risk&quot; alternatives were built
+          for a different job. Here&#x27;s the side-by-side.
+        </p>
+        <div
+          role="table"
+          aria-label="Payment processor comparison"
+          class="table-processor-comparison"
+        >
+          <div role="row" class="row-comparison-header">
+            <div role="columnheader" class="stack-comparison-header-content1">
+              <p class="text-features">FEATURES</p>
+            </div>
+            <div class="stack-provider-values">
+              <div role="columnheader" class="cell-apptics">
+                <p class="text-apptics">apptics</p>
+              </div>
+              <div role="columnheader" class="cell-stripe">
+                <p class="text-stripe">STRIPE</p>
+              </div>
+              <div role="columnheader" class="cell-stripe">
+                <p class="text-stripe">OTHERS</p>
+              </div>
+            </div>
+          </div>
+          <div role="row" class="row-comparison-1">
+            <div role="rowheader" class="stack-1-content1">
+              <p class="text-builtspecificallyf">Built specifically for eCom</p>
+            </div>
+            <div class="stack-provider-values">
+              <div role="cell" class="cell-apptics-2">
+                <p class="text">✓</p>
+              </div>
+              <div role="cell" class="cell-stripe-2">
+                <p class="text-2">×</p>
+              </div>
+              <div role="cell" class="cell-stripe-2">
+                <p class="text-2">×</p>
+              </div>
+            </div>
+          </div>
+          <div role="row" class="row-comparison-1">
+            <div role="rowheader" class="stack-1-content1">
+              <p class="text-builtspecificallyf">
+                High-risk verticals approved
+              </p>
+            </div>
+            <div class="stack-provider-values">
+              <div role="cell" class="cell-apptics-2">
+                <p class="text">✓</p>
+              </div>
+              <div role="cell" class="cell-stripe-2">
+                <p class="text-2">×</p>
+              </div>
+              <div role="cell" class="cell-stripe-2">
+                <p class="text-stripe">Sometimes</p>
+              </div>
+            </div>
+          </div>
+          <div role="row" class="row-comparison-1">
+            <div role="rowheader" class="stack-1-content1">
+              <p class="text-builtspecificallyf">
+                Pre-approval before migration
+              </p>
+            </div>
+            <div class="stack-provider-values">
+              <div role="cell" class="cell-apptics-2">
+                <p class="text">✓</p>
+              </div>
+              <div role="cell" class="cell-stripe-2">
+                <p class="text-2">×</p>
+              </div>
+              <div role="cell" class="cell-stripe-2">
+                <p class="text-2">×</p>
+              </div>
+            </div>
+          </div>
+          <div role="row" class="row-comparison-1">
+            <div role="rowheader" class="stack-1-content1">
+              <p class="text-builtspecificallyf">
+                Multi-Bank Processing (40+ banks)
+              </p>
+            </div>
+            <div class="stack-provider-values">
+              <div role="cell" class="cell-apptics-2">
+                <p class="text">✓</p>
+              </div>
+              <div role="cell" class="cell-stripe-2">
+                <p class="text-2">×</p>
+              </div>
+              <div role="cell" class="cell-stripe-2">
+                <p class="text-2">×</p>
+              </div>
+            </div>
+          </div>
+          <div role="row" class="row-comparison-1">
+            <div role="rowheader" class="stack-1-content1">
+              <p class="text-builtspecificallyf">Human underwriting</p>
+            </div>
+            <div class="stack-provider-values">
+              <div role="cell" class="cell-apptics-2">
+                <p class="text">✓</p>
+              </div>
+              <div role="cell" class="cell-stripe-2">
+                <p class="text-stripe">Rare</p>
+              </div>
+              <div role="cell" class="cell-stripe-2">
+                <p class="text-stripe">Slow</p>
+              </div>
+            </div>
+          </div>
+          <div role="row" class="row-comparison-1">
+            <div role="rowheader" class="stack-1-content1">
+              <p class="text-builtspecificallyf">24/7 operator support</p>
+            </div>
+            <div class="stack-provider-values">
+              <div role="cell" class="cell-apptics-2">
+                <p class="text-apptics">White-Glove</p>
+              </div>
+              <div role="cell" class="cell-stripe-2">
+                <p class="text-stripe">Email only</p>
+              </div>
+              <div role="cell" class="cell-stripe-2">
+                <p class="text-stripe">Slow</p>
+              </div>
+            </div>
+          </div>
+          <div role="row" class="row-comparison-1">
+            <div role="rowheader" class="stack-1-content1">
+              <p class="text-builtspecificallyf">Subscription infrastructure</p>
+            </div>
+            <div class="stack-provider-values">
+              <div role="cell" class="cell-apptics-2">
+                <p class="text-apptics">Native</p>
+              </div>
+              <div role="cell" class="cell-stripe-2">
+                <p class="text-stripe">Limited</p>
+              </div>
+              <div role="cell" class="cell-stripe-2">
+                <p class="text-2">×</p>
+              </div>
+            </div>
+          </div>
+          <div role="row" class="row-comparison-1">
+            <div role="rowheader" class="stack-1-content1">
+              <p class="text-builtspecificallyf">
+                Chargeback &amp; fraud tools
+              </p>
+            </div>
+            <div class="stack-provider-values">
+              <div role="cell" class="cell-apptics-2">
+                <p class="text-apptics">Built In</p>
+              </div>
+              <div role="cell" class="cell-stripe-2">
+                <p class="text-stripe">Basic</p>
+              </div>
+              <div role="cell" class="cell-stripe-2">
+                <p class="text-2">×</p>
+              </div>
+            </div>
+          </div>
+          <div role="row" class="row-comparison-1">
+            <div role="rowheader" class="stack-1-content1">
+              <p class="text-builtspecificallyf">Expedited Approval</p>
+            </div>
+            <div class="stack-provider-values">
+              <div role="cell" class="cell-apptics-2">
+                <p class="text">✓</p>
+              </div>
+              <div role="cell" class="cell-stripe-2">
+                <p class="text-2">×</p>
+              </div>
+              <div role="cell" class="cell-stripe-2">
+                <p class="text-2">×</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          type="button"
+          data-open-form=""
+          aria-haspopup="dialog"
+          aria-controls="apptics-form-modal"
+          class="button-get-started"
+        >
+          <span class="text-book-acall">Book A Call →</span>
+        </button>
+      </section>
+      <section id="infrastructure" class="section-02-benefits">
+        <h2 class="text-benefits-title">
+          Everything You Need<br />Already Built Out
+        </h2>
+        <div class="stack-benefit-cards">
+          <div class="card-benefit-approval">
+            <img
+              src="/assets/landing/blue-payment-design-76F4RC7MKNSG7KWWB8VC5CVH77.png"
+              alt="Blue payment design"
+              loading="lazy"
+              decoding="async"
+              class="blue-payment-design"
+            />
+            <div class="stack-benefit-copy-approved">
+              <h3 class="text-approved-where-strip">
+                Complete Payment Infrastructure
+              </h3>
+              <p class="text-benefit-body-approved">
+                Every tool needed across approval, processing, fraud protection,
+                subscription billing, and payout reconciliation. $900M+
+                processed. 250+ merchants on the platform. Built for operators
+                running real volume, not side projects.
+              </p>
+            </div>
+          </div>
+          <div class="card-benefit-approval">
+            <img
+              src="/assets/landing/hexagonal-icons-7V190X03XYGPJ664J970VYDKBC.png"
+              alt="Hexagonal icons"
+              loading="lazy"
+              decoding="async"
+              class="blue-payment-design"
+            />
+            <div class="stack-benefit-copy-approved">
+              <h3 class="text-approved-where-strip">
+                Built-In Banking Relationships
+              </h3>
+              <p class="text-benefit-body-approved">
+                Direct partnerships with 40+ banks specialized in eCom
+                verticals. The same banks the biggest 8 and 9 figure brands pay.
+                Available the day you become an Apptics merchant. No middleman.
+                No reseller stack. No white-labeled NMI setup pretending to be a
+                processor.
+              </p>
+            </div>
+          </div>
+          <div class="card-benefit-approval">
+            <img
+              src="/assets/landing/blue-icon-bar-5AQCM7KXJQ0HTQ4RWGR7ZBZK2X.png"
+              alt="Blue icon bar"
+              loading="lazy"
+              decoding="async"
+              class="blue-payment-design"
+            />
+            <div class="stack-benefit-copy-approved">
+              <h3 class="text-approved-where-strip">
+                Backed by Real Operators
+              </h3>
+              <p class="text-benefit-body-approved">
+                Every account gets direct access to a team that&#x27;s actually
+                built eCom businesses. Your account manager has shipped
+                products, handled chargebacks, negotiated with acquirers, and
+                survived a Stripe freeze. Real operators and staff who treat
+                your brand like their own.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          type="button"
+          data-open-form=""
+          aria-haspopup="dialog"
+          aria-controls="apptics-form-modal"
+          class="button-get-started"
+        >
+          <span class="text-book-acall">Get Started →</span>
+        </button>
+      </section>
+      <section id="faq" class="section-07-faq">
+        <h2 class="text-faqtitle">Frequently<br />Asked Questions</h2>
+        <div class="stack-faqaccordion">
+          <details open="" class="stack-faqaccordion-content1">
+            <summary class="faq-summary">
+              <span class="text-whattypesofbusine">
+                What types of businesses does Apptics support?
+              </span>
+            </summary>
+            <p class="text-benefit-body-approved">
+              Shopify, WooCommerce, Magento, PrestaShop, BigCommerce, and
+              sticky.io merchants across standard and high-risk verticals — CBD,
+              supplements, vape, nutra, adult, weight loss, firearms
+              accessories, and subscription boxes of every kind. If you&#x27;ve
+              been rejected by Stripe, PayPal, or Shopify Payments, or if
+              you&#x27;ve been disabled after years of clean processing, Apptics
+              is built for exactly your situation.
             </p>
-            <button type="button" class="payments-button payments-button--primary" data-open-form aria-haspopup="dialog" aria-controls="apptics-form-modal">
-              Book a Call <span aria-hidden="true">→</span>
-            </button>
-          </div>
-
-          <div class="payments-table-wrap" role="region" aria-label="Payment processor feature comparison" tabindex="0">
-            <table class="payments-table">
-              <thead>
-                <tr>
-                  <th scope="col">Features</th>
-                  <th scope="col">Stripe</th>
-                  <th scope="col" class="payments-table__apptics"><span class="payments-table-brand"><img src="../assets/apptics-logo-primary.png" alt="Apptics" width="1684" height="384" /></span></th>
-                  <th scope="col">Others</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><th scope="row"><span class="feature-icon feature-icon--storefront" aria-hidden="true"></span><span>Built specifically <br />for eCom</span></th><td><span class="yes" aria-label="Yes"></span></td><td class="payments-table__apptics"><span class="yes" aria-label="Yes"></span></td><td><span class="yes" aria-label="Yes"></span></td></tr>
-                <tr><th scope="row"><span class="feature-icon feature-icon--shield" aria-hidden="true"></span><span>High-risk <br />verticals approved</span></th><td><span class="yes" aria-label="Yes"></span></td><td class="payments-table__apptics"><span class="yes" aria-label="Yes"></span></td><td><span class="no" aria-label="No"></span></td></tr>
-                <tr><th scope="row"><span class="feature-icon feature-icon--seal-check" aria-hidden="true"></span><span>Pre-approval <br />before migration</span></th><td><span class="yes" aria-label="Yes"></span></td><td class="payments-table__apptics"><span class="yes" aria-label="Yes"></span></td><td><span class="yes" aria-label="Yes"></span></td></tr>
-                <tr><th scope="row"><span class="feature-icon feature-icon--network" aria-hidden="true"></span><span>Multi-Bank <br />Processing (35+)</span></th><td><span class="dash" aria-label="Not available">—</span></td><td class="payments-table__apptics"><span class="yes" aria-label="Yes"></span></td><td><span class="dash" aria-label="Not available">—</span></td></tr>
-                <tr><th scope="row"><span class="feature-icon feature-icon--user" aria-hidden="true"></span><span>Human <br />underwriting</span></th><td><span class="dash" aria-label="Not available">—</span></td><td class="payments-table__apptics"><span class="yes" aria-label="Yes"></span></td><td><span class="no" aria-label="No"></span></td></tr>
-                <tr><th scope="row"><span class="feature-icon feature-icon--headset" aria-hidden="true"></span><span>24/7 operator <br />support</span></th><td><span class="dash" aria-label="Not available">—</span></td><td class="payments-table__apptics"><span class="yes" aria-label="Yes"></span></td><td><span class="no" aria-label="No"></span></td></tr>
-                <tr><th scope="row"><span class="feature-icon feature-icon--arrows" aria-hidden="true"></span><span>Subscription <br />infrastructure</span></th><td><span class="dash" aria-label="Not available">—</span></td><td class="payments-table__apptics"><span class="yes" aria-label="Yes"></span></td><td><span class="no" aria-label="No"></span></td></tr>
-                <tr><th scope="row"><span class="feature-icon feature-icon--shield-check" aria-hidden="true"></span><span>Chargeback <br />&amp; fraud tools</span></th><td><span class="dash" aria-label="Not available">—</span></td><td class="payments-table__apptics"><span class="yes" aria-label="Yes"></span></td><td><span class="no" aria-label="No"></span></td></tr>
-                <tr><th scope="row"><span class="feature-icon feature-icon--lightning" aria-hidden="true"></span><span>Expedited Approval</span></th><td><span class="dash" aria-label="Not available">—</span></td><td class="payments-table__apptics"><span class="yes" aria-label="Yes"></span></td><td><span class="no" aria-label="No"></span></td></tr>
-              </tbody>
-            </table>
-          </div>
+          </details>
+          <details class="stack-faqaccordion-content1">
+            <summary class="faq-summary">
+              <span class="text-whattypesofbusine"
+                >How fast can I get approved?</span
+              >
+            </summary>
+            <p class="text-benefit-body-approved">
+              Most merchants are pre-approved in days, not weeks. Underwriting
+              happens with a real person who reviews your business in context —
+              including your chargeback history, refund policy, vertical, and
+              growth trajectory. Once approved, full migration typically
+              completes in 5–7 business days with zero dev hours on your side.
+            </p>
+          </details>
+          <details class="stack-faqaccordion-content1">
+            <summary class="faq-summary">
+              <span class="text-whattypesofbusine">
+                What if Apptics freezes me the way Stripe did?
+              </span>
+            </summary>
+            <p class="text-benefit-body-approved">
+              This is the question every operator asks — and it&#x27;s exactly
+              why Apptics is built on multi-rail processing across 40+ banking
+              partners instead of a single acquirer. You&#x27;re underwritten
+              with full context before you migrate, so there are no surprises
+              later. If one banking partner&#x27;s risk appetite ever shifts,
+              your account rebalances automatically to another rail. No single
+              point of failure. No 120-day hold because a computer got spooked.
+            </p>
+          </details>
+          <details class="stack-faqaccordion-content1">
+            <summary class="faq-summary">
+              <span class="text-whattypesofbusine">
+                How are you different from Stripe or PayPal?
+              </span>
+            </summary>
+            <p class="text-benefit-body-approved">
+              Stripe and PayPal are generalist processors built to serve every
+              business type through one underwriting model — dentists, SaaS,
+              restaurants, and your eCom brand, all in the same risk bucket.
+              Apptics is built specifically for eCom. Every banking
+              relationship, every approval pathway, every support workflow is
+              tuned to how eCom businesses actually operate. Same service
+              category on paper. Completely different infrastructure underneath.
+            </p>
+          </details>
+          <details class="stack-faqaccordion-content1">
+            <summary class="faq-summary">
+              <span class="text-whattypesofbusine">
+                Do you offer global payment processing?
+              </span>
+            </summary>
+            <p class="text-benefit-body-approved">
+              Yes. Apptics supports 180+ currencies and processes across North
+              America, Europe, the UK, and APAC, with local acquiring where
+              available. Global reach without the cross-border decline rates
+              generalist processors charge you for.
+            </p>
+          </details>
+          <details class="stack-faqaccordion-content1">
+            <summary class="faq-summary">
+              <span class="text-whattypesofbusine">
+                Can I integrate with my existing stack?
+              </span>
+            </summary>
+            <p class="text-benefit-body-approved">
+              Yes. Apptics plugs into every major shopping cart, CRM,
+              subscription platform, and checkout system — Shopify, Woo,
+              Magento, PrestaShop, BigCommerce, sticky.io, and 50+ others.
+              Migration is handled 1:1 by our team. Zero dev hours required from
+              your side.
+            </p>
+          </details>
+          <details class="stack-faqaccordion-content1">
+            <summary class="faq-summary">
+              <span class="text-whattypesofbusine">
+                How do you handle chargebacks and fraud?
+              </span>
+            </summary>
+            <p class="text-benefit-body-approved">
+              Built-in Chargeback Guard that fights disputes on your behalf,
+              plus fraud screening trained on eCom-specific patterns — not
+              generic business signals. For merchants above certain volume
+              tiers, we also provide direct VISA and Mastercard liaison support
+              to protect against MATCH list exposure.
+            </p>
+          </details>
         </div>
       </section>
-
-      <section class="payments-proof" aria-label="Customer result">
-        <div class="payments-container payments-proof__card">
-          <div class="payments-proof__copy">
-            <div class="payments-proof__person">
-              <img src="../assets/3J7DR4KQGQ7HJQNRVRJ433YS3D.png" alt="" width="56" height="56" loading="lazy" />
-              <div><strong>Rayan M.</strong><span>8-Fig Ecom Entrepreneur</span></div>
+      <footer id="footer" class="section-08-footer-2">
+        <div class="stack-footer-navigation-2">
+          <div class="stack-footer-brand-2">
+            <div class="stack-footer-logo">
+              <img
+                src="/assets/landing/apptics-logo-6HF8VH0HCY5FJFJRKZ32PTD4ZC.svg"
+                alt="Apptics"
+                loading="eager"
+                decoding="async"
+                class="image-apptics-logo-2"
+              />
             </div>
-            <blockquote>“Apptics helped us process $1.5M in sales and setup back up processors when we were having troubles processing payments. Their team is super dialed and I’ve even texted them in the middle of the night and got responses back in 20 minutes!”</blockquote>
-            <div class="payments-proof__metrics">
-              <div><strong>150% ↑</strong><span>Customer LTV</span></div>
-              <div><strong>27,000+</strong><span>Subscribers</span></div>
-              <div><strong>91.8% ↑</strong><span>Approval Rate</span></div>
-              <div><strong>12% ↓</strong><span>Average Churn</span></div>
+            <div class="stack-social-links">
+              <a
+                href="https://x.com/apptics"
+                aria-label="Apptics on X"
+                class="button-social01"
+              >
+                <img
+                  src="/assets/landing/brand-asset-2DG07SN69W5CV0AP37E8RV8GWE.svg"
+                  alt="BrandAsset"
+                  loading="lazy"
+                  decoding="async"
+                  class="image-brand-asset"
+                /> </a
+              ><a
+                href="https://www.instagram.com/apptics.ai"
+                aria-label="Apptics on Instagram"
+                class="button-social01"
+              >
+                <img
+                  src="/assets/landing/brand-asset-45MJBYW2BRVE18T34ZJVRW0GWA.svg"
+                  alt="BrandAsset"
+                  loading="lazy"
+                  decoding="async"
+                  class="image-brand-asset-2"
+                /> </a
+              ><a
+                href="https://www.linkedin.com/company/appticsai/"
+                aria-label="Apptics on LinkedIn"
+                class="button-social01"
+              >
+                <img
+                  src="/assets/landing/brand-asset-1Q0K0SWCZ0DN5BYV39WSXTGNFJ.svg"
+                  alt="BrandAsset"
+                  loading="lazy"
+                  decoding="async"
+                  class="image-brand-asset-2"
+                />
+              </a>
             </div>
           </div>
-          <div class="video-testimonial payments-proof__video">
-            <video id="rayan-video" playsinline preload="none" poster="../assets/video-poster.png" aria-label="Rayan M. Apptics video testimonial">
-              <source src="../assets/rayan-testimonial.mp4" type="video/mp4" />
-            </video>
-            <button class="video-play" hidden aria-label="Play Rayan’s testimonial">
-              <svg width="32" height="32" viewBox="0 0 256 256" aria-hidden="true"><path d="M224.1 121.1 88.49 37.47A8 8 0 0 0 76 44.28v167.44a8 8 0 0 0 12.49 6.81L224.1 134.9a8 8 0 0 0 0-13.8Z" fill="#FFFFFF" /></svg>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section id="faq" class="payments-faq" aria-labelledby="faq-title">
-        <div class="payments-container payments-faq__inner">
-          <h2 id="faq-title">Frequently asked questions<br /><span>about our services.</span></h2>
-          <div class="payments-faq__list">
-            <details open><summary>What types of businesses does Apptics Pay support?</summary><p>Apptics Pay supports eCommerce, subscription, high-volume, and hard-to-place merchants across a wide range of categories. If you have outgrown Stripe, Shopify Payments, or PayPal, been hit with reserves, or need a processor that understands your business model, we can help you find the right merchant account.</p></details>
-            <details><summary>How fast can I get approved?</summary><p>Most qualified merchants can get reviewed within a few business days. Once approved, our team helps you connect your store, checkout, or payment gateway so you can start processing as quickly as possible.</p></details>
-            <details><summary>What happens if I have been shut down before?</summary><p>That is one of the main reasons merchants come to Apptics Pay. We review your business upfront, look at your processing history, risk profile, chargebacks, refunds, and offer, then match you with the right banking partner instead of forcing you into a one-size-fits-all processor.</p></details>
-            <details><summary>How is Apptics Pay different from Stripe, Shopify Payments, or PayPal?</summary><p>Stripe, Shopify Payments, and PayPal work well until your business no longer fits their risk model. Apptics Pay is built for merchants who need real underwriting, flexible processing options, chargeback protection, and support from people who understand eCommerce risk.</p></details>
-            <details><summary>How much is Apptics Pay?</summary><p>Pricing depends on your business model, processing volume, industry, risk profile, and the merchant account you are approved for. Our team reviews your current setup and gives you clear pricing before you switch.</p></details>
-            <details><summary>What if Apptics freezes me the way Stripe or Shopify Payments did?</summary><p>Apptics Pay is built to reduce that risk before you start processing. Your business is reviewed upfront by real underwriting, so your merchant account is matched to your actual risk profile. The goal is to avoid surprise shutdowns, reserves, and holds by placing you with the right processing partner from day one.</p></details>
-            <details><summary>Do you support high-risk merchants?</summary><p>Yes. Apptics Pay works with many high-volume and hard-to-place merchants. Approval depends on your product category, chargeback history, refund policy, fulfillment model, and processing volume, but we are built to help businesses that general processors often reject or restrict.</p></details>
-            <details><summary>Can I use Apptics Pay with my current store or checkout?</summary><p>Yes. Apptics Pay can connect with major eCommerce platforms, custom checkouts, and payment gateways like NMI and Authorize.net. Our team helps with integration so you don’t have to rebuild your stack just to start processing.</p></details>
-            <details><summary>Do I have to leave Shopify?</summary><p>No. Many merchants use Apptics Pay while still running their store on Shopify. The goal is to give you more control over payment processing, not force you to rebuild your business.</p></details>
-            <details><summary>How do you handle chargebacks and fraud?</summary><p>Apptics Pay merchants are eligible to enroll into Apptics Shield which helps catch disputes early through real-time Visa and Mastercard alerts, then can trigger refunds before they turn into chargebacks. This helps protect your processor relationship, reduce chargeback rates, and lower the risk of frozen payouts, reserves, or account shutdowns.</p></details>
-            <details><summary>Do you offer global payment processing?</summary><p>Apptics Pay can support merchants across multiple regions and currencies depending on your business, location, and approval. Our team will review your setup and help route you toward the best available processing options.</p></details>
-            <details><summary>Who is Apptics Pay best for?</summary><p>Apptics Pay is best for merchants doing real volume who need more stability than Stripe, Shopify Payments, or PayPal can offer. If payment holds, reserves, chargebacks, or processor risk are slowing you down, Apptics Pay is built for you.</p></details>
-          </div>
-        </div>
-      </section>
-
-      <section class="payments-final-cta" aria-labelledby="final-cta-title">
-        <div class="payments-container">
-          <h2 id="final-cta-title">Ready to get your revenue moving again?</h2>
-          <p>Tell us about your business and we’ll help you find the right processing path.</p>
-          <button type="button" class="payments-button payments-button--primary" data-open-form aria-haspopup="dialog" aria-controls="apptics-form-modal">Book a Call <span aria-hidden="true">→</span></button>
-        </div>
-      </section>
-
-      <footer id="footer" class="section footer s134">
-        <div class="s135"></div>
-        <div class="s136">
-          <div class="footer-brand s137">
-            <div class="s138"><img src="../assets/2KPJCSM5V8DNZ1PQ51W9ZK1DD6.svg" alt="Apptics" loading="lazy" decoding="async" class="s139" /></div>
-            <div class="s140">
-              <a href="https://x.com/apptics" aria-label="Apptics on X" class="s141"><img src="../assets/2DG07SN69W5CV0AP37E8RV8GWE.svg" alt="" class="s142" /></a>
-              <a href="https://www.instagram.com/apptics.ai" aria-label="Apptics on Instagram" class="s141"><img src="../assets/45MJBYW2BRVE18T34ZJVRW0GWA.svg" alt="" class="s143" /></a>
-              <a href="https://www.linkedin.com/company/appticsai/" aria-label="Apptics on LinkedIn" class="s141"><img src="../assets/1Q0K0SWCZ0DN5BYV39WSXTGNFJ.svg" alt="" class="s143" /></a>
+          <div class="stack-footer-links-2">
+            <div class="stack-help-links-2">
+              <a href="/payments/#faq" class="text-copy-17">FAQs</a
+              ><a href="https://www.apptics.ai/contact" class="text-copy-17"
+                >Contact Us</a
+              >
             </div>
           </div>
-          <div class="footer-columns footer-help s144"><div class="s152"><p class="s146">Help</p><a href="#faq" class="s153">FAQs</a><a href="https://www.apptics.ai/contact" class="s153">Contact Us</a></div></div>
         </div>
-        <div class="footer-legal s154">
-          <p class="s155">© 2026 Apptics. All rights reserved.</p>
-          <div class="legal-links s156"><a href="https://www.apptics.ai/acceptable-use-policy" class="s155">AUP (Acceptable Use Policy)</a><a href="https://www.apptics.ai/terms-of-service" class="s155">Terms of Service</a><a href="https://www.apptics.ai/privacy-policy" class="s155">Privacy Policy</a></div>
+        <div class="stack-footer-legal-2">
+          <p class="text-copy-18">© 2026 Apptics. All rights reserved.</p>
+          <div class="stack-policy-links-2">
+            <a
+              href="https://www.apptics.ai/acceptable-use-policy"
+              class="text-copy-18"
+              >AUP (Acceptable Use Policy)</a
+            ><a
+              href="https://www.apptics.ai/terms-of-service"
+              class="text-copy-18"
+              >Terms of Service</a
+            ><a
+              href="https://www.apptics.ai/privacy-policy"
+              class="text-copy-18"
+              >Privacy Policy</a
+            >
+          </div>
         </div>
-        <div class="s157"><p class="s158">his site is not a part of the Facebook™️ website or Meta Platforms, Inc. ​Additionally, this site is NOT endorsed by Facebook™️ in any way. Facebook™️ is a trademark of Meta Platforms, Inc.</p></div>
+        <div class="stack-platform-disclaimer-2">
+          <p class="text-platform-disclaimer-2">
+            This site is not part of the Facebook™ website or Meta Platforms,
+            Inc., and is not endorsed by Facebook™ in any way. Facebook™ is a
+            trademark of Meta Platforms, Inc.
+          </p>
+        </div>
       </footer>
     </main>
-    <div id="apptics-form-modal" class="form-modal" hidden role="dialog" aria-modal="true" aria-label="Revenue leak audit form" tabindex="-1"><div class="form-modal-panel"><div id="apptics-form-root"></div></div></div>
-    <script src="../assets/apptics-form.bundle.js" defer></script>
+    <div
+      id="apptics-form-modal"
+      class="form-modal"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-label="Qualification form"
+      tabindex="-1"
+    >
+      <button
+        type="button"
+        class="form-close"
+        data-close-form
+        aria-label="Close qualification form"
+      >
+        ×
+      </button>
+      <div class="form-modal-panel"><div id="apptics-form-root"></div></div>
+    </div>
+    <script src="/assets/apptics-form.bundle.js" defer></script>
   </body>
 </html>
