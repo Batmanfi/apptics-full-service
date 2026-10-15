@@ -120,21 +120,3 @@ if (modal && openers.length) {
     .querySelector("[data-close-form]")
     ?.addEventListener("click", () => closeForm(false));
 }
-
-// Keep the Paper preview crops until playback is requested, then load the real player.
-document.querySelectorAll("[data-wistia]").forEach((button) => {
-  button.addEventListener(
-    "click",
-    () => {
-      const player = document.createElement("iframe");
-      player.src = `https://fast.wistia.net/embed/iframe/${button.dataset.wistia}?autoPlay=true&videoFoam=true`;
-      player.title = button.getAttribute("aria-label");
-      player.allow = "autoplay; fullscreen; picture-in-picture";
-      player.allowFullscreen = true;
-      button.parentElement.append(player);
-      button.hidden = true;
-      player.focus();
-    },
-    { once: true },
-  );
-});

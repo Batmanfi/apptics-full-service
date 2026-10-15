@@ -81,7 +81,7 @@
 }
 
 /* Approved mobile hierarchy shared by both landing pages. */
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   :is(.crm-page, .pay-page) {
     --text-mobile-hero: 32px;
     --leading-mobile-hero: 36px;

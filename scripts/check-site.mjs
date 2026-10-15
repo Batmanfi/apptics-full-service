@@ -69,10 +69,16 @@ assert.equal(
   "four comparison columns",
 );
 assert.equal(
-  (payments.match(/data-wistia=/g) || []).length,
+  (payments.match(/title="(?:Mohammed|Saamir|Lauren) testimonial"/g) || []).length,
   3,
   "three testimonial players",
 );
+for (const mediaId of ["l1vze0mt9p", "7u4p5xwk9m", "3rn9dtcael"]) {
+  assert(
+    payments.includes(`https://fast.wistia.net/embed/iframe/${mediaId}?endVideoBehavior=loop`),
+    `${mediaId}: direct testimonial embed with looping`,
+  );
+}
 assert.equal(
   (payments.match(/role="rowheader"/g) || []).length,
   9,

@@ -1,0 +1,130 @@
+[
+  {
+    "brokenImages": 0,
+    "columns": "none",
+    "heading": "32px",
+    "overflow": [],
+    "route": "/",
+    "viewport": 390,
+    "width": 390
+  },
+  {
+    "brokenImages": 0,
+    "columns": "none",
+    "heading": "32px",
+    "overflow": [
+      "image-payments-dashboard"
+    ],
+    "route": "/payments/",
+    "viewport": 390,
+    "width": 390
+  },
+  {
+    "brokenImages": 0,
+    "columns": "none",
+    "heading": "32px",
+    "overflow": [],
+    "route": "/",
+    "viewport": 767,
+    "width": 767
+  },
+  {
+    "brokenImages": 0,
+    "columns": "none",
+    "heading": "32px",
+    "overflow": [],
+    "route": "/payments/",
+    "viewport": 767,
+    "width": 767
+  },
+  {
+    "brokenImages": 0,
+    "columns": "334.5px 334.5px",
+    "heading": "40px",
+    "overflow": [],
+    "route": "/",
+    "viewport": 753,
+    "width": 768
+  },
+  {
+    "brokenImages": 0,
+    "columns": "334.5px 334.5px",
+    "heading": "40px",
+    "overflow": [],
+    "route": "/payments/",
+    "viewport": 753,
+    "width": 768
+  },
+  {
+    "brokenImages": 0,
+    "columns": "360.5px 360.5px",
+    "heading": "42.64px",
+    "overflow": [],
+    "route": "/",
+    "viewport": 805,
+    "width": 820
+  },
+  {
+    "brokenImages": 0,
+    "columns": "360.5px 360.5px",
+    "heading": "42.64px",
+    "overflow": [],
+    "route": "/payments/",
+    "viewport": 805,
+    "width": 820
+  },
+  {
+    "brokenImages": 0,
+    "columns": "438px 438px",
+    "heading": "48px",
+    "overflow": [],
+    "route": "/",
+    "viewport": 1008,
+    "width": 1023
+  },
+  {
+    "brokenImages": 0,
+    "columns": "438px 438px",
+    "heading": "48px",
+    "overflow": [],
+    "route": "/payments/",
+    "viewport": 1008,
+    "width": 1023
+  },
+  {
+    "brokenImages": 0,
+    "columns": "none",
+    "heading": "38.4px",
+    "overflow": [],
+    "route": "/",
+    "viewport": 1009,
+    "width": 1024
+  },
+  {
+    "brokenImages": 0,
+    "columns": "none",
+    "heading": "38.4px",
+    "overflow": [],
+    "route": "/payments/",
+    "viewport": 1009,
+    "width": 1024
+  },
+  {
+    "brokenImages": 0,
+    "columns": "none",
+    "heading": "49.536px",
+    "overflow": [],
+    "route": "/",
+    "viewport": 1425,
+    "width": 1440
+  },
+  {
+    "brokenImages": 0,
+    "columns": "none",
+    "heading": "49.536px",
+    "overflow": [],
+    "route": "/payments/",
+    "viewport": 1425,
+    "width": 1440
+  }
+]
