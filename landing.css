@@ -2898,6 +2898,9 @@ details > p {
     line-height: 1.08;
     max-width: calc(1080px * var(--landing-scale, 1));
   }
+  .pay-page #hero .text-hero-headline {
+    text-wrap: balance;
+  }
   .landing #hero :is(.text-hero-description, .text-hero-description-2) {
     font-size: calc(22px * var(--landing-scale, 1));
     line-height: 1.35;
