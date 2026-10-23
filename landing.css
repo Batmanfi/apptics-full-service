@@ -3160,7 +3160,7 @@ details > p {
     padding-top: var(--spacing-7);
   }
   .pay-page #hero .text-hero-headline {
-    font-size: var(--text-mobile-hero);
+    font-size: calc(var(--text-mobile-hero) - 2px);
     line-height: var(--leading-mobile-hero);
   }
   .pay-page main h2 {
@@ -3449,5 +3449,36 @@ details > p {
   .landing :is(.stack-footer-legal, .stack-footer-legal-2, .stack-policy-links, .stack-policy-links-2) {
     flex-wrap: wrap;
     gap: 16px;
+  }
+}
+
+.pay-page #hero .text-hero-headline {
+  display: block;
+  line-height: 1.22;
+  text-wrap: pretty;
+}
+.pay-page .hero-headline-highlight {
+  display: inline-block;
+  white-space: nowrap;
+  background: color-mix(in srgb, var(--color-primary) 22%, white);
+  color: inherit;
+  border-radius: 0.18em;
+  padding: 0.02em 0.14em 0.06em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+/* Let the intro wrap naturally, avoiding short orphaned words. */
+.pay-page #hero .text-hero-description-2 {
+  display: block;
+  text-wrap: pretty;
+}
+@media (min-width: 1024px) {
+  .pay-page #hero .stack-hero-title,
+  .pay-page #hero .text-hero-headline {
+    max-width: 900px;
+  }
+  .pay-page #hero .text-hero-description-2 {
+    max-width: 800px;
   }
 }
